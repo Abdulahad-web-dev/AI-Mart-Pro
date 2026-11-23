@@ -1,0 +1,5260 @@
+{
+  "users": [
+    {
+      "id": "usr-customer-1",
+      "name": "Customer Demo",
+      "email": "customer@aimart.test",
+      "passwordHash": "$2a$10$1l3Oy9lI9wwPKvj9SKp.veBylhFE.1d86VtpYat7opjgfvQtBA55i",
+      "role": "CUSTOMER",
+      "phone": "+92 300 1234567",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "suspended": false,
+      "createdAt": "2026-07-25T15:53:59.308Z",
+      "updatedAt": "2026-10-23T15:53:59.308Z"
+    },
+    {
+      "id": "usr-vendor-1",
+      "name": "Vendor Demo",
+      "email": "vendor@aimart.test",
+      "passwordHash": "$2a$10$1l3Oy9lI9wwPKvj9SKp.veBylhFE.1d86VtpYat7opjgfvQtBA55i",
+      "role": "VENDOR",
+      "phone": "+92 321 9876543",
+      "address": "Tech Innovation Park, Sector I-9, Islamabad, Pakistan",
+      "suspended": false,
+      "createdAt": "2026-06-25T15:53:59.308Z",
+      "updatedAt": "2026-10-23T15:53:59.308Z",
+      "vendorProfile": {
+        "id": "vp-1",
+        "userId": "usr-vendor-1",
+        "storeName": "Northstar AI Electronics & Luxury",
+        "description": "Pioneering intelligent gear, flagship audio, and ergonomic essentials.",
+        "city": "Lahore"
+      }
+    },
+    {
+      "id": "usr-admin-1",
+      "name": "Admin Demo",
+      "email": "admin@aimart.test",
+      "passwordHash": "$2a$10$1l3Oy9lI9wwPKvj9SKp.veBylhFE.1d86VtpYat7opjgfvQtBA55i",
+      "role": "ADMIN",
+      "phone": "+92 333 5551212",
+      "address": "Operations HQ, Blue Area, Islamabad",
+      "suspended": false,
+      "createdAt": "2026-04-26T15:53:59.308Z",
+      "updatedAt": "2026-10-23T15:53:59.308Z"
+    },
+    {
+      "id": "usr-delivery-1",
+      "name": "Delivery Demo",
+      "email": "delivery@aimart.test",
+      "passwordHash": "$2a$10$1l3Oy9lI9wwPKvj9SKp.veBylhFE.1d86VtpYat7opjgfvQtBA55i",
+      "role": "DELIVERY",
+      "phone": "+92 345 7778899",
+      "address": "Logistics Depot 4, Korangi Industrial Area, Karachi",
+      "suspended": false,
+      "createdAt": "2026-07-15T15:53:59.308Z",
+      "updatedAt": "2026-10-23T15:53:59.308Z"
+    },
+    {
+      "id": "usr-894zeim",
+      "name": "Jane Doe",
+      "email": "jane.doe@example.com",
+      "role": "CUSTOMER",
+      "passwordHash": "$2a$12$N0PDcjLOoepqqZIB50me7.qATsoqqohPRZmqVTz4n.yK.c.qYIGmm",
+      "suspended": false,
+      "createdAt": "2026-11-18T17:03:59.309Z",
+      "updatedAt": "2026-11-18T17:03:59.309Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-1",
+      "name": "Electronics",
+      "slug": "electronics"
+    },
+    {
+      "id": "cat-2",
+      "name": "Fashion",
+      "slug": "fashion"
+    },
+    {
+      "id": "cat-3",
+      "name": "Home & Living",
+      "slug": "home-living"
+    },
+    {
+      "id": "cat-4",
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    {
+      "id": "cat-5",
+      "name": "Sports",
+      "slug": "sports"
+    },
+    {
+      "id": "cat-6",
+      "name": "Books",
+      "slug": "books"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-0",
+      "name": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
+      "slug": "item-sony-wh-1000xm5-wireless-noise-cancelling-headphon-0",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 89999,
+      "comparePrice": 99999,
+      "stock": 27,
+      "description": "Industry-leading noise cancellation with two processors and 8 microphones. Exceptional sound quality with Hi-Res Audio, 30-hour battery life, and ultra-comfortable lightweight design.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-11-15T15:07:05.647Z",
+      "updatedAt": "2026-11-18T17:07:53.976Z",
+      "images": [
+        {
+          "id": "img-0-1",
+          "productId": "prod-0",
+          "url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-1",
+      "name": "Apple AirPods Pro 2nd Gen with MagSafe Case (USB-C)",
+      "slug": "item-apple-airpods-pro-2nd-gen-with-magsafe-case-usb-c-1",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 64999,
+      "comparePrice": 72999,
+      "stock": 45,
+      "description": "Up to 2x more Active Noise Cancellation, Transparency mode, and Personalized Spatial Audio with dynamic head tracking. Dust, sweat, and water-resistant with precision finding.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-11-12T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-1-1",
+          "productId": "prod-1",
+          "url": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-2",
+      "name": "Samsung Galaxy Watch 6 Classic 47mm AMOLED",
+      "slug": "item-samsung-galaxy-watch-6-classic-47mm-amoled-2",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 54999,
+      "comparePrice": 64999,
+      "stock": 22,
+      "description": "Iconic rotating bezel with sapphire crystal glass display. Advanced sleep coaching, ECG heart monitoring, BIA body composition analysis, and comprehensive fitness tracking.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-11-09T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-2-1",
+          "productId": "prod-2",
+          "url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-3",
+      "name": "Keychron K2 Pro Wireless Custom Mechanical Keyboard",
+      "slug": "item-keychron-k2-pro-wireless-custom-mechanical-keyboar-3",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 24999,
+      "comparePrice": 28999,
+      "stock": 35,
+      "description": "QMK/VIA wireless mechanical keyboard with hot-swappable switches, south-facing RGB backlighting, sound-absorbing foam, and Mac/Windows layout compatibility.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-11-06T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-3-1",
+          "productId": "prod-3",
+          "url": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-4",
+      "name": "Marshall Emberton II Portable Bluetooth Speaker",
+      "slug": "item-marshall-emberton-ii-portable-bluetooth-speaker-4",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 38999,
+      "comparePrice": 44999,
+      "stock": 19,
+      "description": "Compact portable speaker with signature 360-degree True Stereophonic sound. 30+ hours of portable playtime on a single charge and tough IP67 dust and water resistance.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-11-03T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-4-1",
+          "productId": "prod-4",
+          "url": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-5",
+      "name": "Shure SM7B Cardioid Studio Dynamic Vocal Microphone",
+      "slug": "item-shure-sm7b-cardioid-studio-dynamic-vocal-microphon-5",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 112000,
+      "comparePrice": 125000,
+      "stock": 14,
+      "description": "The gold standard for broadcast, podcasting and studio recording. Smooth, flat, wide-range frequency response with electromagnetic shielding against computer hum.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-10-31T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-5-1",
+          "productId": "prod-5",
+          "url": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-6",
+      "name": "Sony Alpha 7 IV Full-Frame Mirrorless Camera Body",
+      "slug": "item-sony-alpha-7-iv-full-frame-mirrorless-camera-body-6",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 495000,
+      "comparePrice": 535000,
+      "stock": 8,
+      "description": "33MP full-frame Exmor R back-illuminated CMOS sensor with BIONZ XR processing engine. 4K 60p 10-bit video, real-time eye autofocus, and 5-axis image stabilization.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-10-28T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-6-1",
+          "productId": "prod-6",
+          "url": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-7",
+      "name": "Logitech MX Master 3S Wireless Performance Mouse",
+      "slug": "item-logitech-mx-master-3s-wireless-performance-mouse-7",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 26999,
+      "comparePrice": 31999,
+      "stock": 50,
+      "description": "8,000 DPI track-on-glass optical sensor with quiet clicks. MagSpeed electromagnetic scrolling wheel with up to 1,000 lines per second and ergonomic sculpted silhouette.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-10-25T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-7-1",
+          "productId": "prod-7",
+          "url": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-8",
+      "name": "Dell UltraSharp 34 Curved USB-C Hub Monitor (WQHD)",
+      "slug": "item-dell-ultrasharp-34-curved-usb-c-hub-monitor-wqhd-8",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 175000,
+      "comparePrice": 195000,
+      "stock": 11,
+      "description": "Immersive 3440 x 1440 WQHD IPS curved screen with 98% DCI-P3 color gamut. Integrated 90W USB-C power delivery, RJ45 Ethernet, and built-in dual 5W speakers.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-10-22T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-8-1",
+          "productId": "prod-8",
+          "url": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-9",
+      "name": "DJI Mini 4 Pro Drone with RC 2 Controller 4K HDR",
+      "slug": "item-dji-mini-4-pro-drone-with-rc-2-controller-4k-hdr-9",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 245000,
+      "comparePrice": 270000,
+      "stock": 9,
+      "description": "Sub-249g ultra-portable folding drone with omnidirectional active obstacle sensing. 4K/60fps HDR True Vertical Shooting, 20km FHD video transmission, and 34-min flight time.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-10-19T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-9-1",
+          "productId": "prod-9",
+          "url": "https://images.unsplash.com/photo-1507582020434-9e0630040943?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-10",
+      "name": "Anker 737 Power Bank (PowerCore 24,000mAh 140W)",
+      "slug": "item-anker-737-power-bank-powercore-24-000mah-140w-10",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 27999,
+      "comparePrice": 32999,
+      "stock": 38,
+      "description": "Ultra-powerful two-way charging with Power Delivery 3.1 and bi-directional 140W fast output. Smart digital display shows output/input power and estimated recharge time.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-10-16T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-10-1",
+          "productId": "prod-10",
+          "url": "https://images.unsplash.com/photo-1609592426867-b50a0ca67d12?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-11",
+      "name": "Meta Quest 3 Advanced All-In-One VR Headset 128GB",
+      "slug": "item-meta-quest-3-advanced-all-in-one-vr-headset-128gb-11",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 155000,
+      "comparePrice": 175000,
+      "stock": 16,
+      "description": "Breakthrough mixed reality with high-resolution full-color passthrough. Snapdragon XR2 Gen 2 processor delivering 2x graphics performance and 4K+ Infinite Display.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-10-13T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-11-1",
+          "productId": "prod-11",
+          "url": "https://images.unsplash.com/photo-1622979135225-d2ba269bc1df?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-12",
+      "name": "CalDigit TS4 Thunderbolt 4 18-Port Premium Dock",
+      "slug": "item-caldigit-ts4-thunderbolt-4-18-port-premium-dock-12",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 98000,
+      "comparePrice": 110000,
+      "stock": 15,
+      "description": "Extreme connectivity with 18 ports including 98W host charging, 2.5 Gigabit Ethernet, dual DisplayPort/Thunderbolt outputs, UHS-II SD card reader, and optical audio.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-10-10T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-12-1",
+          "productId": "prod-12",
+          "url": "https://images.unsplash.com/photo-1625842268584-8f3296236761?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-13",
+      "name": "Apple iPad Air 11-inch M2 Chip Liquid Retina 128GB",
+      "slug": "item-apple-ipad-air-11-inch-m2-chip-liquid-retina-128gb-13",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 185000,
+      "comparePrice": 199000,
+      "stock": 20,
+      "description": "Supercharged by Apple M2 silicon with neural engine. 11-inch Liquid Retina display with P3 wide color and True Tone, USB-C, and Apple Pencil Pro support.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-10-07T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-13-1",
+          "productId": "prod-13",
+          "url": "https://images.unsplash.com/photo-1561154464-82e9adf32764?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-14",
+      "name": "Rain Design mStand Aluminum Ergonomic Laptop Stand",
+      "slug": "item-rain-design-mstand-aluminum-ergonomic-laptop-stand-14",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 12999,
+      "comparePrice": 15999,
+      "stock": 62,
+      "description": "Single solid sand-blasted aluminum piece elevates screen by 5.9 inches for perfect eye alignment. Acts as a passive heat sink to keep laptops cool and organized.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-10-04T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-14-1",
+          "productId": "prod-14",
+          "url": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-15",
+      "name": "Samsung T7 Shield 2TB Rugged External Portable SSD",
+      "slug": "item-samsung-t7-shield-2tb-rugged-external-portable-ssd-15",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 44999,
+      "comparePrice": 51999,
+      "stock": 27,
+      "description": "Blazing read/write speeds up to 1,050/1,000 MB/s via USB 3.2 Gen 2. Rugged rubber exterior with IP65 dust and water resistance, drop-resistant up to 3 meters.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-10-01T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-15-1",
+          "productId": "prod-15",
+          "url": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-16",
+      "name": "GoPro HERO12 Black 5.3K Waterproof Action Camera",
+      "slug": "item-gopro-hero12-black-5-3k-waterproof-action-camera-16",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 115000,
+      "comparePrice": 130000,
+      "stock": 18,
+      "description": "Stunning 5.3K60 video and 27MP photos with Emmy-winning HyperSmooth 6.0 stabilization. Rugged and waterproof down to 33 feet with Bluetooth audio support.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-09-28T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-16-1",
+          "productId": "prod-16",
+          "url": "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-17",
+      "name": "Bose QuietComfort Ultra Spatial Audio Noise Cancelling",
+      "slug": "item-bose-quietcomfort-ultra-spatial-audio-noise-cancel-17",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 94999,
+      "comparePrice": 105000,
+      "stock": 24,
+      "description": "Breakthrough spatial audio places sound right in front of you. CustomTune technology personalizes sound cancellation and profile specifically to your ears.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-09-25T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-17-1",
+          "productId": "prod-17",
+          "url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-18",
+      "name": "Belkin BoostCharge Pro 3-in-1 Fast Wireless Stand",
+      "slug": "item-belkin-boostcharge-pro-3-in-1-fast-wireless-stand-18",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 29999,
+      "comparePrice": 34999,
+      "stock": 31,
+      "description": "Official 15W MagSafe charging stand for iPhone, Apple Watch Fast Charger, and wireless charging tray for AirPods simultaneously with sleek premium chrome accents.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-09-22T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-18-1",
+          "productId": "prod-18",
+          "url": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-19",
+      "name": "Kindle Paperwhite 16GB Glare-Free 6.8-inch e-Reader",
+      "slug": "item-kindle-paperwhite-16gb-glare-free-6-8-inch-e-reade-19",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 43999,
+      "comparePrice": 49999,
+      "stock": 30,
+      "description": "300 ppi glare-free flush-front display reads like real paper in sunlight. Adjustable warm light, IPX8 waterproof rating, and up to 10 weeks of battery life.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-09-19T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-19-1",
+          "productId": "prod-19",
+          "url": "https://images.unsplash.com/photo-1592496001020-d31bd830651f?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-20",
+      "name": "Razer BlackShark V2 Pro Wireless Esports Gaming Headset",
+      "slug": "item-razer-blackshark-v2-pro-wireless-esports-gaming-he-20",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 36999,
+      "comparePrice": 42999,
+      "stock": 25,
+      "description": "Razer TriForce Titanium 50mm drivers and HyperClear Super Wideband detachable microphone. Ultra-soft breathable memory foam cushions and 70-hour battery life.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-09-16T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-20-1",
+          "productId": "prod-20",
+          "url": "https://images.unsplash.com/photo-1545127398-14699f92334b?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-21",
+      "name": "Elgato Stream Deck MK.2 15 Customizable LCD Keys",
+      "slug": "item-elgato-stream-deck-mk-2-15-customizable-lcd-keys-21",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 39999,
+      "comparePrice": 46999,
+      "stock": 21,
+      "description": "Control apps, broadcast streams, mute mics, launch audio clips and automate complex workflow hotkeys with 15 tactile LCD keys and detachable 45-degree magnetic stand.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-09-13T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-21-1",
+          "productId": "prod-21",
+          "url": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-22",
+      "name": "Google Nest Hub 2nd Gen Smart Display with Google Assistant",
+      "slug": "item-google-nest-hub-2nd-gen-smart-display-with-google--22",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 21999,
+      "comparePrice": 26999,
+      "stock": 29,
+      "description": "Control compatible smart lights, thermostats, and music with touch or voice commands. Features Soli radar Sleep Sensing, crisp speakers, and vibrant 7-inch display.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-09-10T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-22-1",
+          "productId": "prod-22",
+          "url": "https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-23",
+      "name": "Philips Hue White & Color Ambiance Smart LED Lightstrip",
+      "slug": "item-philips-hue-white-color-ambiance-smart-led-lightst-23",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 18999,
+      "comparePrice": 22999,
+      "stock": 33,
+      "description": "2-meter flexible Bluetooth LED strip with 16 million colors and tunable warm-to-cool white light. Syncs with music, movies, and PC games for stunning room bias lighting.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-09-07T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-23-1",
+          "productId": "prod-23",
+          "url": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-24",
+      "name": "Logitech C920x HD Pro 1080p Webcam with Dual Microphones",
+      "slug": "item-logitech-c920x-hd-pro-1080p-webcam-with-dual-micro-24",
+      "categoryId": "cat-1",
+      "vendorId": "usr-vendor-1",
+      "price": 19999,
+      "comparePrice": 23999,
+      "stock": 42,
+      "description": "Full HD 1080p video calling at 30 fps with automatic low-light correction. Full stereo audio with dual mics and precision glass lens for pro video meetings.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-09-04T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-24-1",
+          "productId": "prod-24",
+          "url": "https://images.unsplash.com/photo-1587826080692-f439cd0b70da?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-25",
+      "name": "Bellroy Classic Backpack Plus 24L Water-Repellent Commuter",
+      "slug": "item-bellroy-classic-backpack-plus-24l-water-repellent--25",
+      "categoryId": "cat-2",
+      "vendorId": "usr-vendor-1",
+      "price": 34999,
+      "comparePrice": 41999,
+      "stock": 25,
+      "description": "Dual-compartment carry made from 100% recycled water-resistant woven fabric. Padded 16-inch laptop pocket, quick-access sunglasses pocket, and contoured lumbar support.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-09-01T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-25-1",
+          "productId": "prod-25",
+          "url": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-26",
+      "name": "Heritage Low-Top Vulcanized Canvas Retro Sneakers",
+      "slug": "item-heritage-low-top-vulcanized-canvas-retro-sneakers-26",
+      "categoryId": "cat-2",
+      "vendorId": "usr-vendor-1",
+      "price": 8499,
+      "comparePrice": 11999,
+      "stock": 48,
+      "description": "Timeless silhouette crafted from heavy 14oz organic cotton canvas. Ortholite shock-absorbing dual-density insole and slip-resistant vulcanized gum outsole.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-08-29T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-26-1",
+          "productId": "prod-26",
+          "url": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-27",
+      "name": "Heavyweight 480 GSM Combed Cotton Pullover Hoodie",
+      "slug": "item-heavyweight-480-gsm-combed-cotton-pullover-hoodie-27",
+      "categoryId": "cat-2",
+      "vendorId": "usr-vendor-1",
+      "price": 5999,
+      "comparePrice": 8499,
+      "stock": 60,
+      "description": "Luxuriously dense 480 GSM French terry fleece with pre-shrunk anti-pilling wash. Double-lined crossover hood, reinforced kangaroo pocket, and heavy 2x2 ribbing.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-08-26T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-27-1",
+          "productId": "prod-27",
+          "url": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-28",
+      "name": "Handcrafted Full-Grain Lambskin Leather Biker Jacket",
+      "slug": "item-handcrafted-full-grain-lambskin-leather-biker-jack-28",
+      "categoryId": "cat-2",
+      "vendorId": "usr-vendor-1",
+      "price": 48999,
+      "comparePrice": 59999,
+      "stock": 15,
+      "description": "Genuine vegetable-tanned lambskin leather with buttery soft handfeel. Heavy antique silver YKK zippers, action back shoulder gussets, and silky satin lining.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-08-23T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-28-1",
+          "productId": "prod-28",
+          "url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-29",
+      "name": "Ray-Ban Classic Gold Frame G-15 Polarized Aviator Sunglasses",
+      "slug": "item-ray-ban-classic-gold-frame-g-15-polarized-aviator--29",
+      "categoryId": "cat-2",
+      "vendorId": "usr-vendor-1",
+      "price": 36999,
+      "comparePrice": 42999,
+      "stock": 30,
+      "description": "The original iconic 1937 pilot teardrop design. Crystal mineral green polarized lenses eliminate 99% of reflected glare with 100% UV400 radiation protection.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-08-20T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-29-1",
+          "productId": "prod-29",
+          "url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-30",
+      "name": "Seiko 5 Sports Automatic Steel Day-Date Chronograph",
+      "slug": "item-seiko-5-sports-automatic-steel-day-date-chronograp-30",
+      "categoryId": "cat-2",
+      "vendorId": "usr-vendor-1",
+      "price": 68999,
+      "comparePrice": 79999,
+      "stock": 18,
+      "description": "Calibre 4R36 automatic movement with 41-hour power reserve and manual winding capability. Hardlex crystal, unidirectional rotating bezel, and 100m water resistance.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-08-17T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-30-1",
+          "productId": "prod-30",
+          "url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-31",
+      "name": "Italian Goodyear Welted Cap-Toe Oxford Leather Shoes",
+      "slug": "item-italian-goodyear-welted-cap-toe-oxford-leather-sho-31",
+      "categoryId": "cat-2",
+      "vendorId": "usr-vendor-1",
+      "price": 24999,
+      "comparePrice": 32999,
+      "stock": 22,
+      "description": "Masterwork dress shoes handcrafted from full-grain calfskin leather with hand-burnished finish. Resoleable Goodyear welt construction with channeled leather soles.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-08-14T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-31-1",
+          "productId": "prod-31",
+          "url": "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-32",
+      "name": "The Ridge Minimalist Slim RFID-Blocking Carbon Wallet",
+      "slug": "item-the-ridge-minimalist-slim-rfid-blocking-carbon-wal-32",
+      "categoryId": "cat-2",
+      "vendorId": "usr-vendor-1",
+      "price": 18999,
+      "comparePrice": 22999,
+      "stock": 40,
+      "description": "Ultralight 3k carbon fiber plates hold 1-12 cards without stretching. Integrated cash strap and military-grade dual-track RFID protection against electronic skimming.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-08-11T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-32-1",
+          "productId": "prod-32",
+          "url": "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-33",
+      "name": "Vintage Selvedge Raw Denim Trucker Jacket",
+      "slug": "item-vintage-selvedge-raw-denim-trucker-jacket-33",
+      "categoryId": "cat-2",
+      "vendorId": "usr-vendor-1",
+      "price": 14999,
+      "comparePrice": 19999,
+      "stock": 26,
+      "description": "13.5oz redline shuttle-loom selvedge denim woven from ring-spun cotton. Classic shank buttons, double chest flap pockets, and side waist adjusters.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-08-08T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-33-1",
+          "productId": "prod-33",
+          "url": "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-34",
+      "name": "100% Pure Mongolian Cashmere Ribbed Winter Scarf",
+      "slug": "item-100-pure-mongolian-cashmere-ribbed-winter-scarf-34",
+      "categoryId": "cat-2",
+      "vendorId": "usr-vendor-1",
+      "price": 12999,
+      "comparePrice": 16999,
+      "stock": 33,
+      "description": "Grade-A 2-ply long-staple cashmere fibers harvested sustainably. Featherweight yet 8x warmer than standard wool with an exquisitely soft, itch-free drape.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-08-05T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-34-1",
+          "productId": "prod-34",
+          "url": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-35",
+      "name": "Cloudfoam Ultra-Breathable Engineered Mesh Running Shoes",
+      "slug": "item-cloudfoam-ultra-breathable-engineered-mesh-running-35",
+      "categoryId": "cat-2",
+      "vendorId": "usr-vendor-1",
+      "price": 13999,
+      "comparePrice": 18499,
+      "stock": 44,
+      "description": "Seamless breathable knit upper with dynamic midfoot lockdown cage. Ultra-responsive nitrogen-infused foam midsole delivers high energy return with every stride.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-08-02T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-35-1",
+          "productId": "prod-35",
+          "url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-36",
+      "name": "Tailored Slim-Fit Super 120s Wool Midnight Navy Blazer",
+      "slug": "item-tailored-slim-fit-super-120s-wool-midnight-navy-bl-36",
+      "categoryId": "cat-2",
+      "vendorId": "usr-vendor-1",
+      "price": 28999,
+      "comparePrice": 36999,
+      "stock": 17,
+      "description": "Crafted from Italian Super 120s merino wool with natural crease resistance. Half-canvas chest construction, notch lapels, horn buttons, and double back vents.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-07-30T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-36-1",
+          "productId": "prod-36",
+          "url": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-37",
+      "name": "Classic Weatherproof Cotton Gabardine Belted Trench Coat",
+      "slug": "item-classic-weatherproof-cotton-gabardine-belted-trenc-37",
+      "categoryId": "cat-2",
+      "vendorId": "usr-vendor-1",
+      "price": 32999,
+      "comparePrice": 42999,
+      "stock": 14,
+      "description": "Double-breasted trench made with water-repellent dense cotton gabardine. Epaulettes, storm flap, belted cuffs, and vintage check-pattern interior lining.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-07-27T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-37-1",
+          "productId": "prod-37",
+          "url": "https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-38",
+      "name": "Tailored Stretch Cotton Chino Trousers (Khaki Slim)",
+      "slug": "item-tailored-stretch-cotton-chino-trousers-khaki-slim-38",
+      "categoryId": "cat-2",
+      "vendorId": "usr-vendor-1",
+      "price": 4999,
+      "comparePrice": 6999,
+      "stock": 58,
+      "description": "98% long-staple cotton with 2% elastane for unrestricted all-day mobility. Garment-dyed for rich color depth with clean tailored taper through the leg.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-07-24T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-38-1",
+          "productId": "prod-38",
+          "url": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-39",
+      "name": "Hand-Finished Velvety Suede Chelsea Ankle Boots",
+      "slug": "item-hand-finished-velvety-suede-chelsea-ankle-boots-39",
+      "categoryId": "cat-2",
+      "vendorId": "usr-vendor-1",
+      "price": 17999,
+      "comparePrice": 22999,
+      "stock": 24,
+      "description": "Water-treated premium European calf suede with elasticized side gores and woven pull tabs. Cushioned leather footbed paired with durable studded rubber sole.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-07-21T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-39-1",
+          "productId": "prod-39",
+          "url": "https://images.unsplash.com/photo-1638247025967-b4e38f787b76?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-40",
+      "name": "Heavyweight Waxed Canvas Multi-Pocket Utility Tote Bag",
+      "slug": "item-heavyweight-waxed-canvas-multi-pocket-utility-tote-40",
+      "categoryId": "cat-2",
+      "vendorId": "usr-vendor-1",
+      "price": 9999,
+      "comparePrice": 13999,
+      "stock": 36,
+      "description": "18oz paraffin-waxed cotton canvas repels downpours and gains character over time. Saddle leather handles with solid copper rivets and padded laptop divider.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-07-18T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-40-1",
+          "productId": "prod-40",
+          "url": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-41",
+      "name": "Polarized Matte Black Wayfarer Square Sunglasses",
+      "slug": "item-polarized-matte-black-wayfarer-square-sunglasses-41",
+      "categoryId": "cat-2",
+      "vendorId": "usr-vendor-1",
+      "price": 8999,
+      "comparePrice": 12999,
+      "stock": 45,
+      "description": "Featherlight Swiss TR90 memory polymer frames with stainless steel 5-barrel hinges. Scratch-resistant TAC polarized lenses providing high-contrast clarity.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-07-15T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-41-1",
+          "productId": "prod-41",
+          "url": "https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-42",
+      "name": "Merino Wool Ribbed Fisherman Beanie Watch Cap",
+      "slug": "item-merino-wool-ribbed-fisherman-beanie-watch-cap-42",
+      "categoryId": "cat-2",
+      "vendorId": "usr-vendor-1",
+      "price": 2999,
+      "comparePrice": 4299,
+      "stock": 70,
+      "description": "100% fine extrafine merino wool knitted in a substantial 7-gauge half-cardigan stitch. Breathable and naturally odor-resistant with adjustable foldover cuff.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-07-12T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-42-1",
+          "productId": "prod-42",
+          "url": "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-43",
+      "name": "Pure French Linen Relaxed Camp-Collar Resort Shirt",
+      "slug": "item-pure-french-linen-relaxed-camp-collar-resort-shirt-43",
+      "categoryId": "cat-2",
+      "vendorId": "usr-vendor-1",
+      "price": 6499,
+      "comparePrice": 8999,
+      "stock": 39,
+      "description": "Woven from 100% Normandy flax linen with garment-wash softening. Relaxed vintage camp collar, genuine mother-of-pearl buttons, and straight vented hem.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-07-09T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-43-1",
+          "productId": "prod-43",
+          "url": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-44",
+      "name": "Minimalist Matte Black Stainless Steel Mesh Bracelet",
+      "slug": "item-minimalist-matte-black-stainless-steel-mesh-bracel-44",
+      "categoryId": "cat-2",
+      "vendorId": "usr-vendor-1",
+      "price": 3499,
+      "comparePrice": 4999,
+      "stock": 55,
+      "description": "316L surgical-grade stainless steel with scratch-resistant PVD matte black ion plating. Infinite magnetic slide closure fits all wrist sizes comfortably.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-07-06T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-44-1",
+          "productId": "prod-44",
+          "url": "https://images.unsplash.com/photo-1611591475841-f09cfa3413ea?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-45",
+      "name": "Full-Grain Vegetable Tanned Italian Leather Dress Belt",
+      "slug": "item-full-grain-vegetable-tanned-italian-leather-dress--45",
+      "categoryId": "cat-2",
+      "vendorId": "usr-vendor-1",
+      "price": 4999,
+      "comparePrice": 6999,
+      "stock": 42,
+      "description": "Single cut 4mm thick Tuscan bridle leather with beveled, burnished edges. Solid brass buckle with brushed nickel plating that will last for decades.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-07-03T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-45-1",
+          "productId": "prod-45",
+          "url": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-46",
+      "name": "Seamless High-Waist Athletic Compression Leggings",
+      "slug": "item-seamless-high-waist-athletic-compression-leggings-46",
+      "categoryId": "cat-2",
+      "vendorId": "usr-vendor-1",
+      "price": 4499,
+      "comparePrice": 6299,
+      "stock": 65,
+      "description": "4-way stretch squat-proof buttery-soft fabric with graduated compression. Wide ribbed tummy-control waistband with zero front center seam for maximum comfort.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-06-30T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-46-1",
+          "productId": "prod-46",
+          "url": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-47",
+      "name": "Handcrafted Sculptural Ceramic Table Lamp with Linen Shade",
+      "slug": "item-handcrafted-sculptural-ceramic-table-lamp-with-lin-47",
+      "categoryId": "cat-3",
+      "vendorId": "usr-vendor-1",
+      "price": 14999,
+      "comparePrice": 18999,
+      "stock": 16,
+      "description": "Organically sculpted terracotta base with speckled matte white glaze. Natural textured oat linen drum lampshade with 3-step touch dimming 2700K warm glow.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-06-27T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-47-1",
+          "productId": "prod-47",
+          "url": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-48",
+      "name": "Whisper-Quiet Ultrasonic Smart Aroma Diffuser 500ml",
+      "slug": "item-whisper-quiet-ultrasonic-smart-aroma-diffuser-500m-48",
+      "categoryId": "cat-3",
+      "vendorId": "usr-vendor-1",
+      "price": 6999,
+      "comparePrice": 9499,
+      "stock": 40,
+      "description": "Advanced 2.4MHz ultrasonic vibration transforms essential oils into ultra-fine micro-mist. 7 ambient breathing LED colors, 16-hour runtime, and auto waterless shutoff.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-06-24T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-48-1",
+          "productId": "prod-48",
+          "url": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-49",
+      "name": "Hydro Flask 24oz Double-Wall Vacuum Insulated Tumbler",
+      "slug": "item-hydro-flask-24oz-double-wall-vacuum-insulated-tumb-49",
+      "categoryId": "cat-3",
+      "vendorId": "usr-vendor-1",
+      "price": 5499,
+      "comparePrice": 7499,
+      "stock": 55,
+      "description": "TempShield double-wall vacuum insulation keeps iced coffee cold for 24 hours or hot tea steamy for 8 hours. Pro-grade 18/8 stainless steel prevents flavor transfer.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-06-21T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-49-1",
+          "productId": "prod-49",
+          "url": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-50",
+      "name": "DeLonghi Dedica Deluxe 15-Bar Stainless Espresso Machine",
+      "slug": "item-delonghi-dedica-deluxe-15-bar-stainless-espresso-m-50",
+      "categoryId": "cat-3",
+      "vendorId": "usr-vendor-1",
+      "price": 78999,
+      "comparePrice": 89999,
+      "stock": 12,
+      "description": "Sleek 6-inch slim footprint fits any kitchen counter. 15-bar professional pump, rapid thermoblock heating, and adjustable premium milk frother for lattes.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-06-18T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-50-1",
+          "productId": "prod-50",
+          "url": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-51",
+      "name": "Ergonomic High-Back Breathable Mesh Desk Executive Chair",
+      "slug": "item-ergonomic-high-back-breathable-mesh-desk-executive-51",
+      "categoryId": "cat-3",
+      "vendorId": "usr-vendor-1",
+      "price": 36999,
+      "comparePrice": 45999,
+      "stock": 18,
+      "description": "Dynamic bi-directional lumbar support adapts to spine curvature. 3D adjustable armrests, 135-degree synchro-tilt recline, and heavy-duty class-4 gas lift.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-06-15T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-51-1",
+          "productId": "prod-51",
+          "url": "https://images.unsplash.com/photo-1580481077194-c7827806540c?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-52",
+      "name": "French Vanilla & Amber Hand-Poured Soy Wax Candle",
+      "slug": "item-french-vanilla-amber-hand-poured-soy-wax-candle-52",
+      "categoryId": "cat-3",
+      "vendorId": "usr-vendor-1",
+      "price": 2899,
+      "comparePrice": 3999,
+      "stock": 64,
+      "description": "100% natural American soy wax infused with pure Madagascar vanilla beans and warm amber resins. Lead-free crackling wooden wick provides 65 hours of clean burn.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-06-12T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-52-1",
+          "productId": "prod-52",
+          "url": "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-53",
+      "name": "Lodge 10.25-inch Heavy Cast Iron Pre-Seasoned Skillet",
+      "slug": "item-lodge-10-25-inch-heavy-cast-iron-pre-seasoned-skil-53",
+      "categoryId": "cat-3",
+      "vendorId": "usr-vendor-1",
+      "price": 9499,
+      "comparePrice": 12999,
+      "stock": 28,
+      "description": "Pre-seasoned with 100% natural vegetable oil for a natural, easy-release finish that improves with use. Unparalleled heat retention and even cooking on all cooktops.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-06-09T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-53-1",
+          "productId": "prod-53",
+          "url": "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-54",
+      "name": "Modern Matte White Ceramic Planter Pot with Wooden Stand",
+      "slug": "item-modern-matte-white-ceramic-planter-pot-with-wooden-54",
+      "categoryId": "cat-3",
+      "vendorId": "usr-vendor-1",
+      "price": 4999,
+      "comparePrice": 6999,
+      "stock": 35,
+      "description": "Stoneware high-fired ceramic cylinder planter with drainage hole and matching plug. Includes solid walnut cross-stand to elevate indoor fiddle-leaf figs and monsteras.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-06-06T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-54-1",
+          "productId": "prod-54",
+          "url": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-55",
+      "name": "Wusthof Classic 7-Piece High-Carbon Steel Knife Block Set",
+      "slug": "item-wusthof-classic-7-piece-high-carbon-steel-knife-bl-55",
+      "categoryId": "cat-3",
+      "vendorId": "usr-vendor-1",
+      "price": 119000,
+      "comparePrice": 135000,
+      "stock": 8,
+      "description": "Precision-forged from a single piece of high-carbon stainless steel tempered to 58 HRC. Laser-controlled PEtec edge delivers 20% sharper blade with 2x edge retention.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-06-03T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-55-1",
+          "productId": "prod-55",
+          "url": "https://images.unsplash.com/photo-1593618998160-e34014e67546?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-56",
+      "name": "Ultra-Soft Chunky Chenille Hand-Knitted Throw Blanket",
+      "slug": "item-ultra-soft-chunky-chenille-hand-knitted-throw-blan-56",
+      "categoryId": "cat-3",
+      "vendorId": "usr-vendor-1",
+      "price": 7999,
+      "comparePrice": 10999,
+      "stock": 31,
+      "description": "Oversized 50x60 inch plush textured chenille knit. Hypoallergenic, shed-resistant, and machine washable, providing cozy warmth without heavy stifling weight.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-05-31T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-56-1",
+          "productId": "prod-56",
+          "url": "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-57",
+      "name": "Ergonomic Cervical Contour Memory Foam Sleep Pillow",
+      "slug": "item-ergonomic-cervical-contour-memory-foam-sleep-pillo-57",
+      "categoryId": "cat-3",
+      "vendorId": "usr-vendor-1",
+      "price": 5999,
+      "comparePrice": 8499,
+      "stock": 45,
+      "description": "Orthopedic butterfly contour cradles the head and neck to align the cervical spine. Infused with cooling gel beads and wrapped in breathable bamboo cover.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-05-28T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-57-1",
+          "productId": "prod-57",
+          "url": "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-58",
+      "name": "Hario Mizudashi 1000ml Cold Brew Coffee Glass Pitcher",
+      "slug": "item-hario-mizudashi-1000ml-cold-brew-coffee-glass-pitc-58",
+      "categoryId": "cat-3",
+      "vendorId": "usr-vendor-1",
+      "price": 6499,
+      "comparePrice": 8499,
+      "stock": 38,
+      "description": "Japanese heatproof borosilicate glass cold brewer with ultra-fine reusable mesh filter. Extracts smooth, low-acid cold brew concentrate overnight in the fridge.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-05-25T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-58-1",
+          "productId": "prod-58",
+          "url": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-59",
+      "name": "Levoit Core 300 True HEPA Air Purifier for Allergens",
+      "slug": "item-levoit-core-300-true-hepa-air-purifier-for-allerge-59",
+      "categoryId": "cat-3",
+      "vendorId": "usr-vendor-1",
+      "price": 38999,
+      "comparePrice": 45999,
+      "stock": 19,
+      "description": "H13 True HEPA filter captures 99.97% of airborne particles down to 0.3 microns including smoke, pet dander, and dust. Quiet 24dB Sleep Mode and 360-degree intake.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-05-22T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-59-1",
+          "productId": "prod-59",
+          "url": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-60",
+      "name": "Organic Moso Bamboo 3-Piece Kitchen Cutting Board Set",
+      "slug": "item-organic-moso-bamboo-3-piece-kitchen-cutting-board--60",
+      "categoryId": "cat-3",
+      "vendorId": "usr-vendor-1",
+      "price": 4499,
+      "comparePrice": 6499,
+      "stock": 52,
+      "description": "Extra-thick non-porous bamboo boards with deep juice grooves and side handles. Knife-friendly surface prevents dulling and resists knife scarring and moisture warping.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-05-19T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-60-1",
+          "productId": "prod-60",
+          "url": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-61",
+      "name": "Roborock S8 Pro Ultra Robot Vacuum and Sonic Mop",
+      "slug": "item-roborock-s8-pro-ultra-robot-vacuum-and-sonic-mop-61",
+      "categoryId": "cat-3",
+      "vendorId": "usr-vendor-1",
+      "price": 295000,
+      "comparePrice": 330000,
+      "stock": 6,
+      "description": "6,000Pa extreme suction with DuoRoller Riser brush and VibraRise 2.0 mopping. All-in-one docking station auto washes mop, dries with warm air, and empties dustbin.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-05-16T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-61-1",
+          "productId": "prod-61",
+          "url": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-62",
+      "name": "Fellow Stagg EKG Electric Pour-Over Gooseneck Kettle",
+      "slug": "item-fellow-stagg-ekg-electric-pour-over-gooseneck-kett-62",
+      "categoryId": "cat-3",
+      "vendorId": "usr-vendor-1",
+      "price": 49999,
+      "comparePrice": 56999,
+      "stock": 14,
+      "description": "Precision pour gooseneck spout with counterbalanced handle. To-the-degree variable temperature control with LCD screen and 60-minute temperature hold mode.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-05-13T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-62-1",
+          "productId": "prod-62",
+          "url": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-63",
+      "name": "Mid-Century Minimalist Solid Oak Silent Sweep Wall Clock",
+      "slug": "item-mid-century-minimalist-solid-oak-silent-sweep-wall-63",
+      "categoryId": "cat-3",
+      "vendorId": "usr-vendor-1",
+      "price": 6999,
+      "comparePrice": 9499,
+      "stock": 33,
+      "description": "Carved from a single piece of sustainable European white oak with engraved minimalist hour markers. Ultra-silent quartz sweep movement with no annoying ticking.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-05-10T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-63-1",
+          "productId": "prod-63",
+          "url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-64",
+      "name": "800-Thread Count 100% Egyptian Cotton Luxury Bed Sheet Set",
+      "slug": "item-800-thread-count-100-egyptian-cotton-luxury-bed-sh-64",
+      "categoryId": "cat-3",
+      "vendorId": "usr-vendor-1",
+      "price": 13999,
+      "comparePrice": 18999,
+      "stock": 28,
+      "description": "Extra-long staple Egyptian cotton woven in a luminous sateen weave. Silky soft against skin, highly breathable, and fits deep mattresses up to 18 inches.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-05-07T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-64-1",
+          "productId": "prod-64",
+          "url": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-65",
+      "name": "GreenPan Non-Stick Ceramic Cookware Set 10-Piece (Thermolon)",
+      "slug": "item-greenpan-non-stick-ceramic-cookware-set-10-piece-t-65",
+      "categoryId": "cat-3",
+      "vendorId": "usr-vendor-1",
+      "price": 64999,
+      "comparePrice": 75999,
+      "stock": 11,
+      "description": "Free of PFAS, PFOA, lead, and cadmium. Diamond-reinforced Thermolon ceramic coating won’t release toxic fumes even if overheated. Oven safe up to 600°F.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-05-04T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-65-1",
+          "productId": "prod-65",
+          "url": "https://images.unsplash.com/photo-1584269600519-112d071b35e6?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-66",
+      "name": "15lb Weighted Calming Sensory Blanket with Glass Beads",
+      "slug": "item-15lb-weighted-calming-sensory-blanket-with-glass-b-66",
+      "categoryId": "cat-3",
+      "vendorId": "usr-vendor-1",
+      "price": 9999,
+      "comparePrice": 13999,
+      "stock": 30,
+      "description": "Engineered for adults weighing 140-190 lbs utilizing deep touch pressure therapy for deeper restorative sleep. Hypoallergenic micro-glass beads inside 4-inch quilted pockets.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-05-01T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-66-1",
+          "productId": "prod-66",
+          "url": "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-67",
+      "name": "BenQ WiT Eye-Care Intelligent LED Reading & Monitor Lamp",
+      "slug": "item-benq-wit-eye-care-intelligent-led-reading-monitor--67",
+      "categoryId": "cat-3",
+      "vendorId": "usr-vendor-1",
+      "price": 52999,
+      "comparePrice": 59999,
+      "stock": 15,
+      "description": "Smile curve technology illuminates a 35-inch wide area with zero glare. Ambient light sensor auto-adjusts brightness and color temperature between 2700K and 5700K.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-04-28T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-67-1",
+          "productId": "prod-67",
+          "url": "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-68",
+      "name": "Dyson V12 Detect Slim Cordless Vacuum with Laser Head",
+      "slug": "item-dyson-v12-detect-slim-cordless-vacuum-with-laser-h-68",
+      "categoryId": "cat-3",
+      "vendorId": "usr-vendor-1",
+      "price": 215000,
+      "comparePrice": 240000,
+      "stock": 9,
+      "description": "Precisely angled green laser reveals invisible dust on hard floors. Piezo sensor measures dust particles and automatically ramps up suction power when needed.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-04-25T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-68-1",
+          "productId": "prod-68",
+          "url": "https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-69",
+      "name": "Hydrating Botanical Barrier-Repair Skincare Ritual 4-Piece Kit",
+      "slug": "item-hydrating-botanical-barrier-repair-skincare-ritual-69",
+      "categoryId": "cat-4",
+      "vendorId": "usr-vendor-1",
+      "price": 9999,
+      "comparePrice": 13999,
+      "stock": 32,
+      "description": "Complete daily regimen with Amino Acid Cleanser, Niacinamide Balancing Toner, 5% Hyaluronic Essence, and Ceramide Deep Barrier Moisture Recovery Cream.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-04-22T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-69-1",
+          "productId": "prod-69",
+          "url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-70",
+      "name": "Multi-Molecular Weight Hyaluronic Acid Moisture Serum 50ml",
+      "slug": "item-multi-molecular-weight-hyaluronic-acid-moisture-se-70",
+      "categoryId": "cat-4",
+      "vendorId": "usr-vendor-1",
+      "price": 3499,
+      "comparePrice": 4899,
+      "stock": 65,
+      "description": "Combines low, medium, and high molecular weight sodium hyaluronate with provitamin B5 to penetrate deep into skin layers for plump, radiant, dewy hydration.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-04-19T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-70-1",
+          "productId": "prod-70",
+          "url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-71",
+      "name": "Maison Francis Rouge Amber Luxury Extrait De Parfum 70ml",
+      "slug": "item-maison-francis-rouge-amber-luxury-extrait-de-parfu-71",
+      "categoryId": "cat-4",
+      "vendorId": "usr-vendor-1",
+      "price": 58000,
+      "comparePrice": 65000,
+      "stock": 14,
+      "description": "Luminous woody-amber fragrance with notes of Grandiflorum jasmine, saffron, bitter almond, and ambergris. Enigmatic, intoxicating, and lasts 24+ hours.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-04-16T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-71-1",
+          "productId": "prod-71",
+          "url": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-72",
+      "name": "Matte Liquid Velvet Long-Wear Waterproof Lipstick 6-Shade Set",
+      "slug": "item-matte-liquid-velvet-long-wear-waterproof-lipstick--72",
+      "categoryId": "cat-4",
+      "vendorId": "usr-vendor-1",
+      "price": 4999,
+      "comparePrice": 6999,
+      "stock": 48,
+      "description": "Ultra-pigmented formula dries down to a transfer-proof, weightless matte finish. Enriched with vitamin E and jojoba oil to keep lips soft without feathering or drying.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-04-13T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-72-1",
+          "productId": "prod-72",
+          "url": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-73",
+      "name": "100% Pure Organic Cold-Pressed Virgin Rosehip Seed Oil",
+      "slug": "item-100-pure-organic-cold-pressed-virgin-rosehip-seed--73",
+      "categoryId": "cat-4",
+      "vendorId": "usr-vendor-1",
+      "price": 2699,
+      "comparePrice": 3799,
+      "stock": 58,
+      "description": "Unrefined Chilean rosehip oil rich in linolenic acid and provitamin A. Visibly reduces appearance of acne scars, fine lines, sun damage, and uneven skin tone.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-04-10T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-73-1",
+          "productId": "prod-73",
+          "url": "https://images.unsplash.com/photo-1608248597359-05244d825838?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-74",
+      "name": "FOREO LUNA 4 Sonic Silicone Facial Cleansing Device",
+      "slug": "item-foreo-luna-4-sonic-silicone-facial-cleansing-devic-74",
+      "categoryId": "cat-4",
+      "vendorId": "usr-vendor-1",
+      "price": 42999,
+      "comparePrice": 49999,
+      "stock": 20,
+      "description": "T-Sonic pulsations with ultra-hygienic silicone touchpoints remove 99% of dirt, oil, and makeup residue in 1 minute. Features firming massage modes for youthful contours.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-04-07T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-74-1",
+          "productId": "prod-74",
+          "url": "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-75",
+      "name": "20% Pure Vitamin C Radiance & Anti-Oxidant Day Serum 30ml",
+      "slug": "item-20-pure-vitamin-c-radiance-anti-oxidant-day-serum--75",
+      "categoryId": "cat-4",
+      "vendorId": "usr-vendor-1",
+      "price": 3899,
+      "comparePrice": 5299,
+      "stock": 50,
+      "description": "Stabilized L-Ascorbic Acid formulated with Ferulic Acid and Vitamin E. Fights free radical environmental pollution while fading dark stubborn hyperpigmentation spots.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-04-04T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-75-1",
+          "productId": "prod-75",
+          "url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-76",
+      "name": "Moroccanoil Restorative Argan Oil Intensive Hair Mask 250ml",
+      "slug": "item-moroccanoil-restorative-argan-oil-intensive-hair-m-76",
+      "categoryId": "cat-4",
+      "vendorId": "usr-vendor-1",
+      "price": 7499,
+      "comparePrice": 9499,
+      "stock": 36,
+      "description": "Deep 5-minute revival treatment for damaged, color-treated hair. Rich in antioxidant argan oil and shea butter to restore elasticity, shine, and silky softness.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-04-01T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-76-1",
+          "productId": "prod-76",
+          "url": "https://images.unsplash.com/photo-1608248597359-05244d825838?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-77",
+      "name": "Encapsulated Retinol 0.5% Night Cell Renewal Cream",
+      "slug": "item-encapsulated-retinol-0-5-night-cell-renewal-cream-77",
+      "categoryId": "cat-4",
+      "vendorId": "usr-vendor-1",
+      "price": 4299,
+      "comparePrice": 5899,
+      "stock": 42,
+      "description": "Time-released micro-encapsulated retinol minimizes irritation while stimulating cellular turnover. Infused with squalane and peptides to smooth deep wrinkles.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-03-29T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-77-1",
+          "productId": "prod-77",
+          "url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-78",
+      "name": "La Roche-Posay Anthelios Invisible Fluid Sunscreen SPF 50+",
+      "slug": "item-la-roche-posay-anthelios-invisible-fluid-sunscreen-78",
+      "categoryId": "cat-4",
+      "vendorId": "usr-vendor-1",
+      "price": 5999,
+      "comparePrice": 7499,
+      "stock": 49,
+      "description": "Ultra-long UVA protection with broad spectrum SPF 50+. Ultra-fluid non-greasy texture leaves zero white cast and does not sting eyes. Sweat and water resistant.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-03-26T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-78-1",
+          "productId": "prod-78",
+          "url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-79",
+      "name": "Authentic Natural Jade Facial Roller & Contouring Gua Sha",
+      "slug": "item-authentic-natural-jade-facial-roller-contouring-gu-79",
+      "categoryId": "cat-4",
+      "vendorId": "usr-vendor-1",
+      "price": 2499,
+      "comparePrice": 3499,
+      "stock": 75,
+      "description": "Handcrafted from genuine 100% Xiuyan nephrite jade stone. Promotes lymphatic drainage, depuffs morning eyes, and enhances skincare serum absorption.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-03-23T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-79-1",
+          "productId": "prod-79",
+          "url": "https://images.unsplash.com/photo-1608248597359-05244d825838?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-80",
+      "name": "24K Gold Collagen Hydrating Hydrogel Under-Eye Patches (60ct)",
+      "slug": "item-24k-gold-collagen-hydrating-hydrogel-under-eye-pat-80",
+      "categoryId": "cat-4",
+      "vendorId": "usr-vendor-1",
+      "price": 2999,
+      "comparePrice": 4199,
+      "stock": 58,
+      "description": "Instant revitalizing eye masks soaked in active nano-gold, plant collagen, and niacinamide. Eliminates dark circles, reduces eye bags, and smooths crow’s feet.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-03-20T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-80-1",
+          "productId": "prod-80",
+          "url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-81",
+      "name": "Activated Charcoal & French Kaolin Pore Purifying Face Mask",
+      "slug": "item-activated-charcoal-french-kaolin-pore-purifying-fa-81",
+      "categoryId": "cat-4",
+      "vendorId": "usr-vendor-1",
+      "price": 2499,
+      "comparePrice": 3499,
+      "stock": 46,
+      "description": "Mineral-rich detoxifying clay mask draws out deep trapped sebum, blackheads, and environmental toxins without stripping skin moisture or causing redness.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-03-17T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-81-1",
+          "productId": "prod-81",
+          "url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-82",
+      "name": "Olaplex No. 4 Bond Maintenance Hair Repair Shampoo 250ml",
+      "slug": "item-olaplex-no-4-bond-maintenance-hair-repair-shampoo--82",
+      "categoryId": "cat-4",
+      "vendorId": "usr-vendor-1",
+      "price": 7999,
+      "comparePrice": 9999,
+      "stock": 37,
+      "description": "Patented OLAPLEX Bond Building Technology repairs broken disulfide bonds caused by heat, chemical processing, and brushing. Color-safe, sulfate-free formula.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-03-14T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-82-1",
+          "productId": "prod-82",
+          "url": "https://images.unsplash.com/photo-1608248597359-05244d825838?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-83",
+      "name": "CeraVe Hydrating Foaming Cleanser with Essential Ceramides",
+      "slug": "item-cerave-hydrating-foaming-cleanser-with-essential-c-83",
+      "categoryId": "cat-4",
+      "vendorId": "usr-vendor-1",
+      "price": 4499,
+      "comparePrice": 5899,
+      "stock": 54,
+      "description": "Formulated with 3 essential ceramides (1, 3, 6-II) and hyaluronic acid. Cleanses away impurities without disrupting the protective skin barrier. Non-comedogenic.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-03-11T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-83-1",
+          "productId": "prod-83",
+          "url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-84",
+      "name": "Maybelline Lash Sensational Sky High Waterproof Mascara",
+      "slug": "item-maybelline-lash-sensational-sky-high-waterproof-ma-84",
+      "categoryId": "cat-4",
+      "vendorId": "usr-vendor-1",
+      "price": 2899,
+      "comparePrice": 3899,
+      "stock": 68,
+      "description": "Flex Tower mascara brush bends to volumize and extend every single lash from root to tip. Infused with bamboo extract and fibers for authentic sky-high impact.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-03-08T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-84-1",
+          "productId": "prod-84",
+          "url": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-85",
+      "name": "Laneige Berry Lip Sleeping Moisture Plumping Mask 20g",
+      "slug": "item-laneige-berry-lip-sleeping-moisture-plumping-mask--85",
+      "categoryId": "cat-4",
+      "vendorId": "usr-vendor-1",
+      "price": 4999,
+      "comparePrice": 6499,
+      "stock": 50,
+      "description": "Leave-on overnight lip mask enriched with Berry Fruit Complex, Vitamin C, and coconut oil. Melts away dead skin cells to reveal supple, baby-soft lips in the morning.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-03-05T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-85-1",
+          "productId": "prod-85",
+          "url": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-86",
+      "name": "Salt & Stone All-Natural Eucalyptus & Cedarwood Deodorant",
+      "slug": "item-salt-stone-all-natural-eucalyptus-cedarwood-deodor-86",
+      "categoryId": "cat-4",
+      "vendorId": "usr-vendor-1",
+      "price": 4899,
+      "comparePrice": 6299,
+      "stock": 39,
+      "description": "Aluminum-free extra strength formula with seaweed extracts and hyaluronic acid. Neutralizes odor-causing bacteria for 48 hours without staining apparel.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-03-02T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-86-1",
+          "productId": "prod-86",
+          "url": "https://images.unsplash.com/photo-1608248597359-05244d825838?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-87",
+      "name": "Manduka PRO 6mm Non-Slip High-Density Alignment Yoga Mat",
+      "slug": "item-manduka-pro-6mm-non-slip-high-density-alignment-yo-87",
+      "categoryId": "cat-5",
+      "vendorId": "usr-vendor-1",
+      "price": 18999,
+      "comparePrice": 22999,
+      "stock": 26,
+      "description": "Ultra-dense 6mm cushioning protects joints on any hard floor surface. Closed-cell surface seals out sweat and moisture. Guaranteed to never peel or flake.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-02-27T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-87-1",
+          "productId": "prod-87",
+          "url": "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-88",
+      "name": "Bowflex SelectTech 552 Rapid-Dial Adjustable Dumbbells (Pair)",
+      "slug": "item-bowflex-selecttech-552-rapid-dial-adjustable-dumbb-88",
+      "categoryId": "cat-5",
+      "vendorId": "usr-vendor-1",
+      "price": 68999,
+      "comparePrice": 79999,
+      "stock": 10,
+      "description": "Replaces 15 sets of weights in a compact footprint. Turn of a dial automatically changes resistance from 5 lbs up to 52.5 lbs in smooth 2.5-lb increments.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-02-24T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-88-1",
+          "productId": "prod-88",
+          "url": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-89",
+      "name": "Stanley IceFlow 30oz Flip Straw Stainless Sports Jug",
+      "slug": "item-stanley-iceflow-30oz-flip-straw-stainless-sports-j-89",
+      "categoryId": "cat-5",
+      "vendorId": "usr-vendor-1",
+      "price": 6999,
+      "comparePrice": 8999,
+      "stock": 45,
+      "description": "Built with recycled 18/8 stainless steel and double-wall vacuum insulation. Leak-resistant flip straw and rugged carry handle fits standard exercise bike bottle cages.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-02-21T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-89-1",
+          "productId": "prod-89",
+          "url": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-90",
+      "name": "Pro Heavy-Duty 100% Natural Latex Resistance Loop Bands Set",
+      "slug": "item-pro-heavy-duty-100-natural-latex-resistance-loop-b-90",
+      "categoryId": "cat-5",
+      "vendorId": "usr-vendor-1",
+      "price": 3499,
+      "comparePrice": 4999,
+      "stock": 60,
+      "description": "5 color-coded resistance levels from Extra-Light (10 lbs) to Extra-Heavy (50 lbs). Snap-proof layered Malaysian latex ideal for pull-up assists and mobility work.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-02-18T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-90-1",
+          "productId": "prod-90",
+          "url": "https://images.unsplash.com/photo-1598289431512-b97b0917affc?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-91",
+      "name": "Giro Fixture MIPS Aerodynamic Trail Mountain Bike Helmet",
+      "slug": "item-giro-fixture-mips-aerodynamic-trail-mountain-bike--91",
+      "categoryId": "cat-5",
+      "vendorId": "usr-vendor-1",
+      "price": 14999,
+      "comparePrice": 18999,
+      "stock": 22,
+      "description": "Integrated MIPS brain protection system redirects rotational impact energy. In-mold polycarbonate shell with 18 Wind Tunnel vents and Roc Loc Sport dial fit system.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-02-15T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-91-1",
+          "productId": "prod-91",
+          "url": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-92",
+      "name": "Pro Ball-Bearing High-Speed Steel Cable Jump Rope",
+      "slug": "item-pro-ball-bearing-high-speed-steel-cable-jump-rope-92",
+      "categoryId": "cat-5",
+      "vendorId": "usr-vendor-1",
+      "price": 1999,
+      "comparePrice": 2999,
+      "stock": 80,
+      "description": "360-degree double bearing rotation for effortless double-unders and high cadence cardio. Kink-free coated steel cable with knurled non-slip aluminum alloy handles.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-02-12T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-92-1",
+          "productId": "prod-92",
+          "url": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-93",
+      "name": "Theragun Prime Deep Muscle Percussion Massage Gun",
+      "slug": "item-theragun-prime-deep-muscle-percussion-massage-gun-93",
+      "categoryId": "cat-5",
+      "vendorId": "usr-vendor-1",
+      "price": 59999,
+      "comparePrice": 68999,
+      "stock": 14,
+      "description": "16mm amplitude reaches 60% deeper into muscle tissue than standard vibration massagers. QuietForce technology with Bluetooth app-guided recovery routines.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-02-09T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-93-1",
+          "productId": "prod-93",
+          "url": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-94",
+      "name": "Heavy-Duty Commercial Grade Foldable Incline Weight Bench",
+      "slug": "item-heavy-duty-commercial-grade-foldable-incline-weigh-94",
+      "categoryId": "cat-5",
+      "vendorId": "usr-vendor-1",
+      "price": 27999,
+      "comparePrice": 34999,
+      "stock": 17,
+      "description": "800-lb real weight capacity built from commercial 2x2 inch steel tube. 7 backrest positions and 3 seat angles for flat, incline, and decline bench presses.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-02-06T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-94-1",
+          "productId": "prod-94",
+          "url": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-95",
+      "name": "7mm Heavy Neoprene Powerlifting Compression Knee Sleeves (Pair)",
+      "slug": "item-7mm-heavy-neoprene-powerlifting-compression-knee-s-95",
+      "categoryId": "cat-5",
+      "vendorId": "usr-vendor-1",
+      "price": 5499,
+      "comparePrice": 7499,
+      "stock": 38,
+      "description": "Approved for competitive powerlifting and Olympic weightlifting. Provides robust joint warmth and rebound out of the bottom of heavy squats.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-02-03T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-95-1",
+          "productId": "prod-95",
+          "url": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-96",
+      "name": "Salomon Active Skin 8 Hydration Trail Running Vest Pack",
+      "slug": "item-salomon-active-skin-8-hydration-trail-running-vest-96",
+      "categoryId": "cat-5",
+      "vendorId": "usr-vendor-1",
+      "price": 24999,
+      "comparePrice": 29999,
+      "stock": 19,
+      "description": "Sensifit construction hugs chest snugly without chafing or bouncing during ultra-marathons. Includes two 500ml soft flasks with high-flow bite valves.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-01-31T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-96-1",
+          "productId": "prod-96",
+          "url": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-97",
+      "name": "Xiaomi Smart Band 8 Active 5ATM Waterproof Fitness Tracker",
+      "slug": "item-xiaomi-smart-band-8-active-5atm-waterproof-fitness-97",
+      "categoryId": "cat-5",
+      "vendorId": "usr-vendor-1",
+      "price": 8999,
+      "comparePrice": 11999,
+      "stock": 52,
+      "description": "1.47-inch TFT color display with 50+ workout modes. 24-hour heart rate and SpO2 monitoring, up to 14 days of battery life, and 50m water resistance for swimming.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-01-28T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-97-1",
+          "productId": "prod-97",
+          "url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-98",
+      "name": "Carbon Fiber Pro Pickleball Paddle with Polymer Honeycomb Core",
+      "slug": "item-carbon-fiber-pro-pickleball-paddle-with-polymer-ho-98",
+      "categoryId": "cat-5",
+      "vendorId": "usr-vendor-1",
+      "price": 11999,
+      "comparePrice": 15999,
+      "stock": 28,
+      "description": "USAPA-approved textured raw carbon fiber face maximizes ball spin and shot precision. Vibration-dampening 16mm core with edge-guard protection.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-01-25T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-98-1",
+          "productId": "prod-98",
+          "url": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-99",
+      "name": "Anti-Burst 65cm Heavy-Duty Core Stability Exercise Ball",
+      "slug": "item-anti-burst-65cm-heavy-duty-core-stability-exercise-99",
+      "categoryId": "cat-5",
+      "vendorId": "usr-vendor-1",
+      "price": 3499,
+      "comparePrice": 4899,
+      "stock": 46,
+      "description": "2000-micrometer thick PVC walls withstand up to 2,000 lbs. Deflates slowly and safely if punctured. Includes high-volume quick foot pump.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-01-22T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-99-1",
+          "productId": "prod-99",
+          "url": "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-100",
+      "name": "Everlast Pro Style Elite Training Boxing Gloves 14oz",
+      "slug": "item-everlast-pro-style-elite-training-boxing-gloves-14-100",
+      "categoryId": "cat-5",
+      "vendorId": "usr-vendor-1",
+      "price": 9499,
+      "comparePrice": 12999,
+      "stock": 25,
+      "description": "High-density two-layer foam padding protects knuckles during heavy bag sparring. EverCool mesh palm ventilation with secure full hook-and-loop wrist strap.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-01-19T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-100-1",
+          "productId": "prod-100",
+          "url": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-101",
+      "name": "Digital Hand Grip Strength Dynamometer Trainer (198 lbs)",
+      "slug": "item-digital-hand-grip-strength-dynamometer-trainer-198-101",
+      "categoryId": "cat-5",
+      "vendorId": "usr-vendor-1",
+      "price": 4999,
+      "comparePrice": 6999,
+      "stock": 35,
+      "description": "High-precision strain gauge sensor accurately measures grip strength up to 198 lbs (90 kg). Auto-stores up to 19 user profiles with rating indicators.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-01-16T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-101-1",
+          "productId": "prod-101",
+          "url": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-102",
+      "name": "Black Diamond Trail Back Shock-Absorbing Trekking Poles",
+      "slug": "item-black-diamond-trail-back-shock-absorbing-trekking--102",
+      "categoryId": "cat-5",
+      "vendorId": "usr-vendor-1",
+      "price": 16999,
+      "comparePrice": 21999,
+      "stock": 20,
+      "description": "Three-section 7075 aluminum shafts with FlickLock adjustability. Ergonomic EVA foam grips with moisture-wicking wrist straps for mountain expeditions.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-01-13T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-102-1",
+          "productId": "prod-102",
+          "url": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-103",
+      "name": "Ergonomic Rotating Steel Push-Up Stands with Rubber Base",
+      "slug": "item-ergonomic-rotating-steel-push-up-stands-with-rubbe-103",
+      "categoryId": "cat-5",
+      "vendorId": "usr-vendor-1",
+      "price": 3299,
+      "comparePrice": 4599,
+      "stock": 44,
+      "description": "Smooth ball-bearing rotational handles engage more pectoral and tricep muscle fibers while reducing strain on wrists and elbows. Supports up to 400 lbs.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-01-10T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-103-1",
+          "productId": "prod-103",
+          "url": "https://images.unsplash.com/photo-1598289431512-b97b0917affc?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-104",
+      "name": "TriggerPoint GRID High-Density Muscle Trigger Foam Roller",
+      "slug": "item-triggerpoint-grid-high-density-muscle-trigger-foam-104",
+      "categoryId": "cat-5",
+      "vendorId": "usr-vendor-1",
+      "price": 6499,
+      "comparePrice": 8499,
+      "stock": 37,
+      "description": "Multi-density exterior surface channels blood and oxygen directly to tight connective fascia. Rigid hollow core retains shape under heavy daily bodyweight rolling.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-01-07T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-104-1",
+          "productId": "prod-104",
+          "url": "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-105",
+      "name": "The Creative Momentum Playbook (Clothbound Hardcover)",
+      "slug": "item-the-creative-momentum-playbook-clothbound-hardcove-105",
+      "categoryId": "cat-6",
+      "vendorId": "usr-vendor-1",
+      "price": 3899,
+      "comparePrice": 4999,
+      "stock": 40,
+      "description": "Definitive guide to breaking creative blocks, structuring productive studio routines, and producing iconic work consistently without burnout.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-01-04T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-105-1",
+          "productId": "prod-105",
+          "url": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-106",
+      "name": "Cognitive Productivity & Focus Journal (Undated 6-Month)",
+      "slug": "item-cognitive-productivity-focus-journal-undated-6-mon-106",
+      "categoryId": "cat-6",
+      "vendorId": "usr-vendor-1",
+      "price": 2499,
+      "comparePrice": 3499,
+      "stock": 55,
+      "description": "Quarterly undated layout featuring science-backed time-blocking quadrants, daily priority matrices, and evening gratitude reflections on 120gsm bleeding-proof paper.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2026-01-01T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-106-1",
+          "productId": "prod-106",
+          "url": "https://images.unsplash.com/photo-1532012164546-f432f2e3777f?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-107",
+      "name": "Vintage Handcrafted Brass Fountain Pen with Iridium Medium Nib",
+      "slug": "item-vintage-handcrafted-brass-fountain-pen-with-iridiu-107",
+      "categoryId": "cat-6",
+      "vendorId": "usr-vendor-1",
+      "price": 5999,
+      "comparePrice": 8499,
+      "stock": 25,
+      "description": "Precision-machined from solid raw brass that develops a unique natural patina over time. German iridium nib delivers wet, butter-smooth ink flow with zero scratching.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2025-12-29T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-107-1",
+          "productId": "prod-107",
+          "url": "https://images.unsplash.com/photo-1585336261026-41864177b949?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-108",
+      "name": "Modern Architectural Masterworks: Global Design Compendium",
+      "slug": "item-modern-architectural-masterworks-global-design-com-108",
+      "categoryId": "cat-6",
+      "vendorId": "usr-vendor-1",
+      "price": 8999,
+      "comparePrice": 11999,
+      "stock": 18,
+      "description": "Stunning 450-page oversized linen coffee table volume featuring high-resolution photography, blueprints, and architectural narratives of 100 iconic modern residences.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2025-12-26T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-108-1",
+          "productId": "prod-108",
+          "url": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-109",
+      "name": "Deep Work: Rules for Focused Success in a Distracted World",
+      "slug": "item-deep-work-rules-for-focused-success-in-a-distracte-109",
+      "categoryId": "cat-6",
+      "vendorId": "usr-vendor-1",
+      "price": 2299,
+      "comparePrice": 2999,
+      "stock": 65,
+      "description": "Cal Newport’s seminal work arguing that the ability to concentrate without distraction is the ultimate competitive advantage in the modern information economy.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2025-12-23T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-109-1",
+          "productId": "prod-109",
+          "url": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-110",
+      "name": "Refillable Full-Grain Leather Travelers Notebook (Rustic Brown)",
+      "slug": "item-refillable-full-grain-leather-travelers-notebook-r-110",
+      "categoryId": "cat-6",
+      "vendorId": "usr-vendor-1",
+      "price": 4999,
+      "comparePrice": 6999,
+      "stock": 32,
+      "description": "Hand-cut 2mm pull-up cowhide leather cover with elastic binding holding up to 3 notebook inserts. Includes blank, lined, and grid kraft paper refills.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2025-12-20T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-110-1",
+          "productId": "prod-110",
+          "url": "https://images.unsplash.com/photo-1532012164546-f432f2e3777f?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-111",
+      "name": "Master Modern Calligraphy & Brush Lettering Complete Starter Kit",
+      "slug": "item-master-modern-calligraphy-brush-lettering-complete-111",
+      "categoryId": "cat-6",
+      "vendorId": "usr-vendor-1",
+      "price": 4499,
+      "comparePrice": 5999,
+      "stock": 36,
+      "description": "Includes 4 dual-tip brush pens, oblique dip pen holder with 3 flexible steel nibs, 50ml sumi black ink jar, and 80-page spiral-bound stroke practice workbook.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2025-12-17T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-111-1",
+          "productId": "prod-111",
+          "url": "https://images.unsplash.com/photo-1585336261026-41864177b949?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-112",
+      "name": "Ergonomic Anodized Aluminum Reading Stand & Book Holder",
+      "slug": "item-ergonomic-anodized-aluminum-reading-stand-book-hol-112",
+      "categoryId": "cat-6",
+      "vendorId": "usr-vendor-1",
+      "price": 6999,
+      "comparePrice": 8999,
+      "stock": 28,
+      "description": "Heavy 360-degree rotating base with dual-damping arms holding hefty textbooks and iPads up to 10 lbs. Spring-loaded page pegs hold books open flat hands-free.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2025-12-14T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-112-1",
+          "productId": "prod-112",
+          "url": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-113",
+      "name": "Thinking in Systems: A Primer by Donella Meadows",
+      "slug": "item-thinking-in-systems-a-primer-by-donella-meadows-113",
+      "categoryId": "cat-6",
+      "vendorId": "usr-vendor-1",
+      "price": 2499,
+      "comparePrice": 3299,
+      "stock": 45,
+      "description": "Essential reading on how systems behave, why interventions fail, and how feedback loops govern economics, organizations, and global ecosystems.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2025-12-11T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-113-1",
+          "productId": "prod-113",
+          "url": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-114",
+      "name": "Rotring 600 Precision Drafting Mechanical Pencil 0.5mm",
+      "slug": "item-rotring-600-precision-drafting-mechanical-pencil-0-114",
+      "categoryId": "cat-6",
+      "vendorId": "usr-vendor-1",
+      "price": 6499,
+      "comparePrice": 7999,
+      "stock": 33,
+      "description": "Full-metal brass hexagonal body prevents rolling off drafting tables. Ergonomic knurled grip, fixed 4mm lead guidance sleeve, and lead hardness grade indicator.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2025-12-08T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-114-1",
+          "productId": "prod-114",
+          "url": "https://images.unsplash.com/photo-1585336261026-41864177b949?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-115",
+      "name": "Heavy 16oz Waxed Canvas Roll-Up Pen & Brush Pouch",
+      "slug": "item-heavy-16oz-waxed-canvas-roll-up-pen-brush-pouch-115",
+      "categoryId": "cat-6",
+      "vendorId": "usr-vendor-1",
+      "price": 2899,
+      "comparePrice": 3999,
+      "stock": 50,
+      "description": "10 dedicated elasticized slots hold fountain pens, mechanical pencils, and brushes without scratching. Rolls securely with full-grain leather strap and brass stud.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2025-12-05T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-115-1",
+          "productId": "prod-115",
+          "url": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-116",
+      "name": "Dual-Sided Waterproof Vegan Leather Desk Blotter Pad (90x45cm)",
+      "slug": "item-dual-sided-waterproof-vegan-leather-desk-blotter-p-116",
+      "categoryId": "cat-6",
+      "vendorId": "usr-vendor-1",
+      "price": 3499,
+      "comparePrice": 4899,
+      "stock": 62,
+      "description": "Premium PU leather protects wooden desks from scratches, coffee spills, and heat stains. Smooth glide mouse surface with non-slip suede textured reverse side.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2025-12-02T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-116-1",
+          "productId": "prod-116",
+          "url": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-117",
+      "name": "The Psychology of Money: Timeless Lessons on Wealth & Happiness",
+      "slug": "item-the-psychology-of-money-timeless-lessons-on-wealth-117",
+      "categoryId": "cat-6",
+      "vendorId": "usr-vendor-1",
+      "price": 1999,
+      "comparePrice": 2699,
+      "stock": 75,
+      "description": "Morgan Housel shares 19 short stories exploring the strange ways people think about money, risk, ego, and greed, and teaches how to make better financial decisions.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2025-11-29T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-117-1",
+          "productId": "prod-117",
+          "url": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-118",
+      "name": "The Designer’s Dictionary of Color Harmonies & Palettes",
+      "slug": "item-the-designer-s-dictionary-of-color-harmonies-palet-118",
+      "categoryId": "cat-6",
+      "vendorId": "usr-vendor-1",
+      "price": 5499,
+      "comparePrice": 7299,
+      "stock": 23,
+      "description": "In-depth reference examining 30 key colors across creative disciplines. Full-page mood boards, historical cultural contexts, and CMYK/RGB conversion tables.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2025-11-26T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-118-1",
+          "productId": "prod-118",
+          "url": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-119",
+      "name": "Leuchtturm1917 Medium A5 Hardcover Dot Grid Notebook",
+      "slug": "item-leuchtturm1917-medium-a5-hardcover-dot-grid-notebo-119",
+      "categoryId": "cat-6",
+      "vendorId": "usr-vendor-1",
+      "price": 4999,
+      "comparePrice": 6499,
+      "stock": 48,
+      "description": "251 numbered pages of ink-proof 80gsm paper with table of contents, dual ribbon bookmarks, expandable back pocket, and archival sticker labels.",
+      "featured": false,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2025-11-23T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-119-1",
+          "productId": "prod-119",
+          "url": "https://images.unsplash.com/photo-1532012164546-f432f2e3777f?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    },
+    {
+      "id": "prod-120",
+      "name": "Atomic Habits: Tiny Changes, Remarkable Results by James Clear",
+      "slug": "item-atomic-habits-tiny-changes-remarkable-results-by-j-120",
+      "categoryId": "cat-6",
+      "vendorId": "usr-vendor-1",
+      "price": 2499,
+      "comparePrice": 3299,
+      "stock": 85,
+      "description": "The #1 New York Times bestseller on how microscopic 1% changes compounding daily can transform career, health, personal relationships, and long-term habits.",
+      "featured": true,
+      "active": true,
+      "moderation": "VISIBLE",
+      "createdAt": "2025-11-20T15:07:05.647Z",
+      "updatedAt": "2026-11-17T15:07:05.647Z",
+      "images": [
+        {
+          "id": "img-120-1",
+          "productId": "prod-120",
+          "url": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=800&q=80",
+          "sortOrder": 0
+        }
+      ]
+    }
+  ],
+  "productImages": [
+    {
+      "id": "img-0-1",
+      "productId": "prod-0",
+      "url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-1-1",
+      "productId": "prod-1",
+      "url": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-2-1",
+      "productId": "prod-2",
+      "url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-3-1",
+      "productId": "prod-3",
+      "url": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-4-1",
+      "productId": "prod-4",
+      "url": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-5-1",
+      "productId": "prod-5",
+      "url": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-6-1",
+      "productId": "prod-6",
+      "url": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-7-1",
+      "productId": "prod-7",
+      "url": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-8-1",
+      "productId": "prod-8",
+      "url": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-9-1",
+      "productId": "prod-9",
+      "url": "https://images.unsplash.com/photo-1507582020434-9e0630040943?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-10-1",
+      "productId": "prod-10",
+      "url": "https://images.unsplash.com/photo-1609592426867-b50a0ca67d12?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-11-1",
+      "productId": "prod-11",
+      "url": "https://images.unsplash.com/photo-1622979135225-d2ba269bc1df?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-12-1",
+      "productId": "prod-12",
+      "url": "https://images.unsplash.com/photo-1625842268584-8f3296236761?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-13-1",
+      "productId": "prod-13",
+      "url": "https://images.unsplash.com/photo-1561154464-82e9adf32764?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-14-1",
+      "productId": "prod-14",
+      "url": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-15-1",
+      "productId": "prod-15",
+      "url": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-16-1",
+      "productId": "prod-16",
+      "url": "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-17-1",
+      "productId": "prod-17",
+      "url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-18-1",
+      "productId": "prod-18",
+      "url": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-19-1",
+      "productId": "prod-19",
+      "url": "https://images.unsplash.com/photo-1592496001020-d31bd830651f?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-20-1",
+      "productId": "prod-20",
+      "url": "https://images.unsplash.com/photo-1545127398-14699f92334b?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-21-1",
+      "productId": "prod-21",
+      "url": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-22-1",
+      "productId": "prod-22",
+      "url": "https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-23-1",
+      "productId": "prod-23",
+      "url": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-24-1",
+      "productId": "prod-24",
+      "url": "https://images.unsplash.com/photo-1587826080692-f439cd0b70da?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-25-1",
+      "productId": "prod-25",
+      "url": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-26-1",
+      "productId": "prod-26",
+      "url": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-27-1",
+      "productId": "prod-27",
+      "url": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-28-1",
+      "productId": "prod-28",
+      "url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-29-1",
+      "productId": "prod-29",
+      "url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-30-1",
+      "productId": "prod-30",
+      "url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-31-1",
+      "productId": "prod-31",
+      "url": "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-32-1",
+      "productId": "prod-32",
+      "url": "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-33-1",
+      "productId": "prod-33",
+      "url": "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-34-1",
+      "productId": "prod-34",
+      "url": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-35-1",
+      "productId": "prod-35",
+      "url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-36-1",
+      "productId": "prod-36",
+      "url": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-37-1",
+      "productId": "prod-37",
+      "url": "https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-38-1",
+      "productId": "prod-38",
+      "url": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-39-1",
+      "productId": "prod-39",
+      "url": "https://images.unsplash.com/photo-1638247025967-b4e38f787b76?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-40-1",
+      "productId": "prod-40",
+      "url": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-41-1",
+      "productId": "prod-41",
+      "url": "https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-42-1",
+      "productId": "prod-42",
+      "url": "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-43-1",
+      "productId": "prod-43",
+      "url": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-44-1",
+      "productId": "prod-44",
+      "url": "https://images.unsplash.com/photo-1611591475841-f09cfa3413ea?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-45-1",
+      "productId": "prod-45",
+      "url": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-46-1",
+      "productId": "prod-46",
+      "url": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-47-1",
+      "productId": "prod-47",
+      "url": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-48-1",
+      "productId": "prod-48",
+      "url": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-49-1",
+      "productId": "prod-49",
+      "url": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-50-1",
+      "productId": "prod-50",
+      "url": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-51-1",
+      "productId": "prod-51",
+      "url": "https://images.unsplash.com/photo-1580481077194-c7827806540c?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-52-1",
+      "productId": "prod-52",
+      "url": "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-53-1",
+      "productId": "prod-53",
+      "url": "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-54-1",
+      "productId": "prod-54",
+      "url": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-55-1",
+      "productId": "prod-55",
+      "url": "https://images.unsplash.com/photo-1593618998160-e34014e67546?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-56-1",
+      "productId": "prod-56",
+      "url": "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-57-1",
+      "productId": "prod-57",
+      "url": "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-58-1",
+      "productId": "prod-58",
+      "url": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-59-1",
+      "productId": "prod-59",
+      "url": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-60-1",
+      "productId": "prod-60",
+      "url": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-61-1",
+      "productId": "prod-61",
+      "url": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-62-1",
+      "productId": "prod-62",
+      "url": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-63-1",
+      "productId": "prod-63",
+      "url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-64-1",
+      "productId": "prod-64",
+      "url": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-65-1",
+      "productId": "prod-65",
+      "url": "https://images.unsplash.com/photo-1584269600519-112d071b35e6?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-66-1",
+      "productId": "prod-66",
+      "url": "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-67-1",
+      "productId": "prod-67",
+      "url": "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-68-1",
+      "productId": "prod-68",
+      "url": "https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-69-1",
+      "productId": "prod-69",
+      "url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-70-1",
+      "productId": "prod-70",
+      "url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-71-1",
+      "productId": "prod-71",
+      "url": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-72-1",
+      "productId": "prod-72",
+      "url": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-73-1",
+      "productId": "prod-73",
+      "url": "https://images.unsplash.com/photo-1608248597359-05244d825838?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-74-1",
+      "productId": "prod-74",
+      "url": "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-75-1",
+      "productId": "prod-75",
+      "url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-76-1",
+      "productId": "prod-76",
+      "url": "https://images.unsplash.com/photo-1608248597359-05244d825838?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-77-1",
+      "productId": "prod-77",
+      "url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-78-1",
+      "productId": "prod-78",
+      "url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-79-1",
+      "productId": "prod-79",
+      "url": "https://images.unsplash.com/photo-1608248597359-05244d825838?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-80-1",
+      "productId": "prod-80",
+      "url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-81-1",
+      "productId": "prod-81",
+      "url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-82-1",
+      "productId": "prod-82",
+      "url": "https://images.unsplash.com/photo-1608248597359-05244d825838?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-83-1",
+      "productId": "prod-83",
+      "url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-84-1",
+      "productId": "prod-84",
+      "url": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-85-1",
+      "productId": "prod-85",
+      "url": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-86-1",
+      "productId": "prod-86",
+      "url": "https://images.unsplash.com/photo-1608248597359-05244d825838?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-87-1",
+      "productId": "prod-87",
+      "url": "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-88-1",
+      "productId": "prod-88",
+      "url": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-89-1",
+      "productId": "prod-89",
+      "url": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-90-1",
+      "productId": "prod-90",
+      "url": "https://images.unsplash.com/photo-1598289431512-b97b0917affc?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-91-1",
+      "productId": "prod-91",
+      "url": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-92-1",
+      "productId": "prod-92",
+      "url": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-93-1",
+      "productId": "prod-93",
+      "url": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-94-1",
+      "productId": "prod-94",
+      "url": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-95-1",
+      "productId": "prod-95",
+      "url": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-96-1",
+      "productId": "prod-96",
+      "url": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-97-1",
+      "productId": "prod-97",
+      "url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-98-1",
+      "productId": "prod-98",
+      "url": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-99-1",
+      "productId": "prod-99",
+      "url": "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-100-1",
+      "productId": "prod-100",
+      "url": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-101-1",
+      "productId": "prod-101",
+      "url": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-102-1",
+      "productId": "prod-102",
+      "url": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-103-1",
+      "productId": "prod-103",
+      "url": "https://images.unsplash.com/photo-1598289431512-b97b0917affc?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-104-1",
+      "productId": "prod-104",
+      "url": "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-105-1",
+      "productId": "prod-105",
+      "url": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-106-1",
+      "productId": "prod-106",
+      "url": "https://images.unsplash.com/photo-1532012164546-f432f2e3777f?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-107-1",
+      "productId": "prod-107",
+      "url": "https://images.unsplash.com/photo-1585336261026-41864177b949?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-108-1",
+      "productId": "prod-108",
+      "url": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-109-1",
+      "productId": "prod-109",
+      "url": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-110-1",
+      "productId": "prod-110",
+      "url": "https://images.unsplash.com/photo-1532012164546-f432f2e3777f?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-111-1",
+      "productId": "prod-111",
+      "url": "https://images.unsplash.com/photo-1585336261026-41864177b949?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-112-1",
+      "productId": "prod-112",
+      "url": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-113-1",
+      "productId": "prod-113",
+      "url": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-114-1",
+      "productId": "prod-114",
+      "url": "https://images.unsplash.com/photo-1585336261026-41864177b949?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-115-1",
+      "productId": "prod-115",
+      "url": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-116-1",
+      "productId": "prod-116",
+      "url": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-117-1",
+      "productId": "prod-117",
+      "url": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-118-1",
+      "productId": "prod-118",
+      "url": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-119-1",
+      "productId": "prod-119",
+      "url": "https://images.unsplash.com/photo-1532012164546-f432f2e3777f?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-120-1",
+      "productId": "prod-120",
+      "url": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=800&q=80",
+      "sortOrder": 0
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev-1",
+      "productId": "prod-0",
+      "userId": "usr-customer-1",
+      "rating": 4,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Sony works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-11-15T15:07:05.647Z"
+    },
+    {
+      "id": "rev-2",
+      "productId": "prod-1",
+      "userId": "usr-customer-2",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Apple works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-11-13T15:07:05.647Z"
+    },
+    {
+      "id": "rev-3",
+      "productId": "prod-2",
+      "userId": "usr-customer-3",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Samsung works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-11-11T15:07:05.647Z"
+    },
+    {
+      "id": "rev-4",
+      "productId": "prod-3",
+      "userId": "usr-customer-4",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Keychron works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-11-09T15:07:05.647Z"
+    },
+    {
+      "id": "rev-5",
+      "productId": "prod-4",
+      "userId": "usr-customer-5",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Marshall works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-11-07T15:07:05.647Z"
+    },
+    {
+      "id": "rev-6",
+      "productId": "prod-5",
+      "userId": "usr-customer-6",
+      "rating": 4,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Shure works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-11-05T15:07:05.647Z"
+    },
+    {
+      "id": "rev-7",
+      "productId": "prod-6",
+      "userId": "usr-customer-7",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Sony works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-11-03T15:07:05.647Z"
+    },
+    {
+      "id": "rev-8",
+      "productId": "prod-7",
+      "userId": "usr-customer-8",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Logitech works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-11-01T15:07:05.647Z"
+    },
+    {
+      "id": "rev-9",
+      "productId": "prod-8",
+      "userId": "usr-customer-1",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Dell works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-10-30T15:07:05.647Z"
+    },
+    {
+      "id": "rev-10",
+      "productId": "prod-9",
+      "userId": "usr-customer-2",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The DJI works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-10-28T15:07:05.647Z"
+    },
+    {
+      "id": "rev-11",
+      "productId": "prod-10",
+      "userId": "usr-customer-3",
+      "rating": 4,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Anker works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-10-26T15:07:05.647Z"
+    },
+    {
+      "id": "rev-12",
+      "productId": "prod-11",
+      "userId": "usr-customer-4",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Meta works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-10-24T15:07:05.647Z"
+    },
+    {
+      "id": "rev-13",
+      "productId": "prod-12",
+      "userId": "usr-customer-5",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The CalDigit works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-10-22T15:07:05.647Z"
+    },
+    {
+      "id": "rev-14",
+      "productId": "prod-13",
+      "userId": "usr-customer-6",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Apple works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-10-20T15:07:05.647Z"
+    },
+    {
+      "id": "rev-15",
+      "productId": "prod-14",
+      "userId": "usr-customer-7",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Rain works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-10-18T15:07:05.647Z"
+    },
+    {
+      "id": "rev-16",
+      "productId": "prod-15",
+      "userId": "usr-customer-8",
+      "rating": 4,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Samsung works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-10-16T15:07:05.647Z"
+    },
+    {
+      "id": "rev-17",
+      "productId": "prod-16",
+      "userId": "usr-customer-1",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The GoPro works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-10-14T15:07:05.647Z"
+    },
+    {
+      "id": "rev-18",
+      "productId": "prod-17",
+      "userId": "usr-customer-2",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Bose works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-10-12T15:07:05.647Z"
+    },
+    {
+      "id": "rev-19",
+      "productId": "prod-18",
+      "userId": "usr-customer-3",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Belkin works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-10-10T15:07:05.647Z"
+    },
+    {
+      "id": "rev-20",
+      "productId": "prod-19",
+      "userId": "usr-customer-4",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Kindle works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-10-08T15:07:05.647Z"
+    },
+    {
+      "id": "rev-21",
+      "productId": "prod-20",
+      "userId": "usr-customer-5",
+      "rating": 4,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Razer works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-10-06T15:07:05.647Z"
+    },
+    {
+      "id": "rev-22",
+      "productId": "prod-21",
+      "userId": "usr-customer-6",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Elgato works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-10-04T15:07:05.647Z"
+    },
+    {
+      "id": "rev-23",
+      "productId": "prod-22",
+      "userId": "usr-customer-7",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Google works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-10-02T15:07:05.647Z"
+    },
+    {
+      "id": "rev-24",
+      "productId": "prod-23",
+      "userId": "usr-customer-8",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Philips works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-09-30T15:07:05.647Z"
+    },
+    {
+      "id": "rev-25",
+      "productId": "prod-24",
+      "userId": "usr-customer-1",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Logitech works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-09-28T15:07:05.647Z"
+    },
+    {
+      "id": "rev-26",
+      "productId": "prod-25",
+      "userId": "usr-customer-2",
+      "rating": 4,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Bellroy works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-09-26T15:07:05.647Z"
+    },
+    {
+      "id": "rev-27",
+      "productId": "prod-26",
+      "userId": "usr-customer-3",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Heritage works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-09-24T15:07:05.647Z"
+    },
+    {
+      "id": "rev-28",
+      "productId": "prod-27",
+      "userId": "usr-customer-4",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Heavyweight works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-09-22T15:07:05.647Z"
+    },
+    {
+      "id": "rev-29",
+      "productId": "prod-28",
+      "userId": "usr-customer-5",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Handcrafted works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-09-20T15:07:05.647Z"
+    },
+    {
+      "id": "rev-30",
+      "productId": "prod-29",
+      "userId": "usr-customer-6",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Ray-Ban works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-09-18T15:07:05.647Z"
+    },
+    {
+      "id": "rev-31",
+      "productId": "prod-30",
+      "userId": "usr-customer-7",
+      "rating": 4,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Seiko works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-09-16T15:07:05.647Z"
+    },
+    {
+      "id": "rev-32",
+      "productId": "prod-31",
+      "userId": "usr-customer-8",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Italian works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-09-14T15:07:05.647Z"
+    },
+    {
+      "id": "rev-33",
+      "productId": "prod-32",
+      "userId": "usr-customer-1",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The The works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-09-12T15:07:05.647Z"
+    },
+    {
+      "id": "rev-34",
+      "productId": "prod-33",
+      "userId": "usr-customer-2",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The Vintage works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-09-10T15:07:05.647Z"
+    },
+    {
+      "id": "rev-35",
+      "productId": "prod-34",
+      "userId": "usr-customer-3",
+      "rating": 5,
+      "text": "Absolutely outstanding quality. Ordered in Lahore and received safe and sound within 2 days. The 100% works exactly as described!",
+      "status": "VISIBLE",
+      "createdAt": "2026-09-08T15:07:05.647Z"
+    }
+  ],
+  "cartItems": [
+    {
+      "id": "ci-tab6slc",
+      "userId": "usr-customer-1",
+      "productId": "prod-0",
+      "quantity": 10
+    },
+    {
+      "id": "ci-8dqspy1",
+      "userId": "usr-customer-1",
+      "productId": "prod-103",
+      "quantity": 1
+    },
+    {
+      "id": "ci-eqno65u",
+      "userId": "usr-customer-1",
+      "productId": "prod-26",
+      "quantity": 1
+    },
+    {
+      "id": "ci-9y5qjak",
+      "userId": "usr-customer-1",
+      "productId": "prod-23",
+      "quantity": 1
+    }
+  ],
+  "wishlistItems": [
+    {
+      "id": "wl-2iqyg2e",
+      "userId": "usr-894zeim",
+      "productId": "prod-0"
+    },
+    {
+      "id": "wl-ykkfe5v",
+      "userId": "usr-894zeim",
+      "productId": "prod-1"
+    },
+    {
+      "id": "wl-61sgiku",
+      "userId": "usr-customer-1",
+      "productId": "prod-2"
+    },
+    {
+      "id": "wl-3b7swof",
+      "userId": "usr-customer-1",
+      "productId": "prod-22"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord-39-57no",
+      "customerId": "usr-894zeim",
+      "total": 89999,
+      "status": "PLACED",
+      "address": "House #42, Street 8, Phase 5, DHA, Lahore, Punjab, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "BANK_TRANSFER",
+      "createdAt": "2026-11-18T17:07:53.980Z",
+      "updatedAt": "2026-11-18T17:07:53.980Z"
+    },
+    {
+      "id": "ord-1",
+      "customerId": "usr-customer-1",
+      "total": 18999,
+      "status": "PLACED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "BANK_TRANSFER",
+      "createdAt": "2026-08-08T15:53:59.308Z",
+      "updatedAt": "2026-08-08T15:53:59.308Z"
+    },
+    {
+      "id": "ord-2",
+      "customerId": "usr-customer-1",
+      "total": 17998,
+      "status": "CONFIRMED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-08-10T15:53:59.308Z",
+      "updatedAt": "2026-08-10T15:53:59.308Z"
+    },
+    {
+      "id": "ord-3",
+      "customerId": "usr-customer-1",
+      "total": 41997,
+      "status": "PACKED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-08-12T15:53:59.308Z",
+      "updatedAt": "2026-08-12T15:53:59.308Z"
+    },
+    {
+      "id": "ord-4",
+      "customerId": "usr-customer-1",
+      "total": 10999,
+      "status": "SHIPPED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-08-14T15:53:59.308Z",
+      "updatedAt": "2026-08-14T15:53:59.308Z"
+    },
+    {
+      "id": "ord-5",
+      "customerId": "usr-customer-1",
+      "total": 14998,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "BANK_TRANSFER",
+      "createdAt": "2026-08-16T15:53:59.308Z",
+      "updatedAt": "2026-08-16T15:53:59.308Z"
+    },
+    {
+      "id": "ord-6",
+      "customerId": "usr-customer-1",
+      "total": 14997,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-08-18T15:53:59.308Z",
+      "updatedAt": "2026-08-18T15:53:59.308Z"
+    },
+    {
+      "id": "ord-7",
+      "customerId": "usr-customer-1",
+      "total": 6499,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-08-20T15:53:59.308Z",
+      "updatedAt": "2026-08-20T15:53:59.308Z"
+    },
+    {
+      "id": "ord-8",
+      "customerId": "usr-customer-1",
+      "total": 7198,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-08-22T15:53:59.308Z",
+      "updatedAt": "2026-08-22T15:53:59.308Z"
+    },
+    {
+      "id": "ord-9",
+      "customerId": "usr-customer-1",
+      "total": 23997,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "BANK_TRANSFER",
+      "createdAt": "2026-08-24T15:53:59.308Z",
+      "updatedAt": "2026-08-24T15:53:59.308Z"
+    },
+    {
+      "id": "ord-10",
+      "customerId": "usr-customer-1",
+      "total": 5499,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-08-26T15:53:59.308Z",
+      "updatedAt": "2026-08-26T15:53:59.308Z"
+    },
+    {
+      "id": "ord-11",
+      "customerId": "usr-customer-1",
+      "total": 4398,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-08-28T15:53:59.308Z",
+      "updatedAt": "2026-08-28T15:53:59.308Z"
+    },
+    {
+      "id": "ord-12",
+      "customerId": "usr-customer-1",
+      "total": 18897,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-08-30T15:53:59.308Z",
+      "updatedAt": "2026-08-30T15:53:59.308Z"
+    },
+    {
+      "id": "ord-13",
+      "customerId": "usr-customer-1",
+      "total": 2999,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "BANK_TRANSFER",
+      "createdAt": "2026-09-01T15:53:59.308Z",
+      "updatedAt": "2026-09-01T15:53:59.308Z"
+    },
+    {
+      "id": "ord-14",
+      "customerId": "usr-customer-1",
+      "total": 8598,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-09-03T15:53:59.308Z",
+      "updatedAt": "2026-09-03T15:53:59.308Z"
+    },
+    {
+      "id": "ord-15",
+      "customerId": "usr-customer-1",
+      "total": 35997,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-09-05T15:53:59.308Z",
+      "updatedAt": "2026-09-05T15:53:59.308Z"
+    },
+    {
+      "id": "ord-16",
+      "customerId": "usr-customer-1",
+      "total": 1999,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-09-07T15:53:59.308Z",
+      "updatedAt": "2026-09-07T15:53:59.308Z"
+    },
+    {
+      "id": "ord-17",
+      "customerId": "usr-customer-1",
+      "total": 3998,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "BANK_TRANSFER",
+      "createdAt": "2026-09-09T15:53:59.308Z",
+      "updatedAt": "2026-09-09T15:53:59.308Z"
+    },
+    {
+      "id": "ord-18",
+      "customerId": "usr-customer-1",
+      "total": 4797,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-09-11T15:53:59.308Z",
+      "updatedAt": "2026-09-11T15:53:59.308Z"
+    },
+    {
+      "id": "ord-19",
+      "customerId": "usr-customer-1",
+      "total": 18999,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-09-13T15:53:59.308Z",
+      "updatedAt": "2026-09-13T15:53:59.308Z"
+    },
+    {
+      "id": "ord-20",
+      "customerId": "usr-customer-1",
+      "total": 17998,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-09-15T15:53:59.308Z",
+      "updatedAt": "2026-09-15T15:53:59.308Z"
+    },
+    {
+      "id": "ord-21",
+      "customerId": "usr-customer-1",
+      "total": 41997,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "BANK_TRANSFER",
+      "createdAt": "2026-09-17T15:53:59.308Z",
+      "updatedAt": "2026-09-17T15:53:59.308Z"
+    },
+    {
+      "id": "ord-22",
+      "customerId": "usr-customer-1",
+      "total": 10999,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-09-19T15:53:59.308Z",
+      "updatedAt": "2026-09-19T15:53:59.308Z"
+    },
+    {
+      "id": "ord-23",
+      "customerId": "usr-customer-1",
+      "total": 14998,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-09-21T15:53:59.308Z",
+      "updatedAt": "2026-09-21T15:53:59.308Z"
+    },
+    {
+      "id": "ord-24",
+      "customerId": "usr-customer-1",
+      "total": 14997,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-09-23T15:53:59.308Z",
+      "updatedAt": "2026-09-23T15:53:59.308Z"
+    },
+    {
+      "id": "ord-25",
+      "customerId": "usr-customer-1",
+      "total": 6499,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "BANK_TRANSFER",
+      "createdAt": "2026-09-25T15:53:59.308Z",
+      "updatedAt": "2026-09-25T15:53:59.308Z"
+    },
+    {
+      "id": "ord-26",
+      "customerId": "usr-customer-1",
+      "total": 7198,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-09-27T15:53:59.308Z",
+      "updatedAt": "2026-09-27T15:53:59.308Z"
+    },
+    {
+      "id": "ord-27",
+      "customerId": "usr-customer-1",
+      "total": 23997,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-09-29T15:53:59.308Z",
+      "updatedAt": "2026-09-29T15:53:59.308Z"
+    },
+    {
+      "id": "ord-28",
+      "customerId": "usr-customer-1",
+      "total": 5499,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-10-01T15:53:59.308Z",
+      "updatedAt": "2026-10-01T15:53:59.308Z"
+    },
+    {
+      "id": "ord-29",
+      "customerId": "usr-customer-1",
+      "total": 4398,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "BANK_TRANSFER",
+      "createdAt": "2026-10-03T15:53:59.308Z",
+      "updatedAt": "2026-10-03T15:53:59.308Z"
+    },
+    {
+      "id": "ord-30",
+      "customerId": "usr-customer-1",
+      "total": 18897,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-10-05T15:53:59.308Z",
+      "updatedAt": "2026-10-05T15:53:59.308Z"
+    },
+    {
+      "id": "ord-31",
+      "customerId": "usr-customer-1",
+      "total": 2999,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-10-07T15:53:59.308Z",
+      "updatedAt": "2026-10-07T15:53:59.308Z"
+    },
+    {
+      "id": "ord-32",
+      "customerId": "usr-customer-1",
+      "total": 8598,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-10-09T15:53:59.308Z",
+      "updatedAt": "2026-10-09T15:53:59.308Z"
+    },
+    {
+      "id": "ord-33",
+      "customerId": "usr-customer-1",
+      "total": 35997,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "BANK_TRANSFER",
+      "createdAt": "2026-10-11T15:53:59.308Z",
+      "updatedAt": "2026-10-11T15:53:59.308Z"
+    },
+    {
+      "id": "ord-34",
+      "customerId": "usr-customer-1",
+      "total": 1999,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-10-13T15:53:59.308Z",
+      "updatedAt": "2026-10-13T15:53:59.308Z"
+    },
+    {
+      "id": "ord-35",
+      "customerId": "usr-customer-1",
+      "total": 3998,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-10-15T15:53:59.308Z",
+      "updatedAt": "2026-10-15T15:53:59.308Z"
+    },
+    {
+      "id": "ord-36",
+      "customerId": "usr-customer-1",
+      "total": 4797,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-10-17T15:53:59.308Z",
+      "updatedAt": "2026-10-17T15:53:59.308Z"
+    },
+    {
+      "id": "ord-37",
+      "customerId": "usr-customer-1",
+      "total": 18999,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "BANK_TRANSFER",
+      "createdAt": "2026-10-19T15:53:59.308Z",
+      "updatedAt": "2026-10-19T15:53:59.308Z"
+    },
+    {
+      "id": "ord-38",
+      "customerId": "usr-customer-1",
+      "total": 17998,
+      "status": "DELIVERED",
+      "address": "Suite 402, Al-Hafeez Heights, Gulberg III, Lahore, Pakistan",
+      "phone": "+92 300 1234567",
+      "paymentMethod": "COD",
+      "createdAt": "2026-10-21T15:53:59.308Z",
+      "updatedAt": "2026-10-21T15:53:59.308Z"
+    }
+  ],
+  "orderItems": [
+    {
+      "id": "oi-1",
+      "orderId": "ord-1",
+      "productId": "prod-0",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Noise Cancelling Headphones Pro",
+      "priceSnapshot": 18999,
+      "quantity": 1,
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "oi-2",
+      "orderId": "ord-2",
+      "productId": "prod-1",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Pro Wireless Earbuds Spatial",
+      "priceSnapshot": 8999,
+      "quantity": 2,
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "oi-3",
+      "orderId": "ord-3",
+      "productId": "prod-2",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Smart AMOLED Fitness Watch",
+      "priceSnapshot": 13999,
+      "quantity": 3,
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "oi-4",
+      "orderId": "ord-4",
+      "productId": "prod-3",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "RGB Tactile Mechanical Keyboard",
+      "priceSnapshot": 10999,
+      "quantity": 1,
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "oi-5",
+      "orderId": "ord-5",
+      "productId": "prod-4",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Portable 360 Spatial Speaker",
+      "priceSnapshot": 7499,
+      "quantity": 2,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-6",
+      "orderId": "ord-6",
+      "productId": "prod-5",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Minimalist Carbon Everyday Backpack",
+      "priceSnapshot": 4999,
+      "quantity": 3,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-7",
+      "orderId": "ord-7",
+      "productId": "prod-6",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Classic Heritage Canvas Sneakers",
+      "priceSnapshot": 6499,
+      "quantity": 1,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-8",
+      "orderId": "ord-8",
+      "productId": "prod-7",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Heavyweight Brushed Cotton Hoodie",
+      "priceSnapshot": 3599,
+      "quantity": 2,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-9",
+      "orderId": "ord-9",
+      "productId": "prod-8",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Modern Sculptural Ceramic Lamp",
+      "priceSnapshot": 7999,
+      "quantity": 3,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-10",
+      "orderId": "ord-10",
+      "productId": "prod-9",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Ultrasonic Smart Aroma Diffuser",
+      "priceSnapshot": 5499,
+      "quantity": 1,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-11",
+      "orderId": "ord-11",
+      "productId": "prod-10",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Double-Wall Vacuum Insulated Tumbler",
+      "priceSnapshot": 2199,
+      "quantity": 2,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-12",
+      "orderId": "ord-12",
+      "productId": "prod-11",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Hydrating Botanical Skincare Ritual Kit",
+      "priceSnapshot": 6299,
+      "quantity": 3,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-13",
+      "orderId": "ord-13",
+      "productId": "prod-12",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Pure Hyaluronic Moisture Boost Serum",
+      "priceSnapshot": 2999,
+      "quantity": 1,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-14",
+      "orderId": "ord-14",
+      "productId": "prod-13",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "High-Density Non-Slip Yoga Mat",
+      "priceSnapshot": 4299,
+      "quantity": 2,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-15",
+      "orderId": "ord-15",
+      "productId": "prod-14",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Precision Quick-Select Adjustable Dumbbell",
+      "priceSnapshot": 11999,
+      "quantity": 3,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-16",
+      "orderId": "ord-16",
+      "productId": "prod-15",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Vacuum Insulated Steel Sports Flask",
+      "priceSnapshot": 1999,
+      "quantity": 1,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-17",
+      "orderId": "ord-17",
+      "productId": "prod-16",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "The Creative Momentum Handbook",
+      "priceSnapshot": 1999,
+      "quantity": 2,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-18",
+      "orderId": "ord-18",
+      "productId": "prod-17",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Cognitive Productivity & Focus Journal",
+      "priceSnapshot": 1599,
+      "quantity": 3,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-19",
+      "orderId": "ord-19",
+      "productId": "prod-0",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Noise Cancelling Headphones Pro",
+      "priceSnapshot": 18999,
+      "quantity": 1,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-20",
+      "orderId": "ord-20",
+      "productId": "prod-1",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Pro Wireless Earbuds Spatial",
+      "priceSnapshot": 8999,
+      "quantity": 2,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-21",
+      "orderId": "ord-21",
+      "productId": "prod-2",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Smart AMOLED Fitness Watch",
+      "priceSnapshot": 13999,
+      "quantity": 3,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-22",
+      "orderId": "ord-22",
+      "productId": "prod-3",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "RGB Tactile Mechanical Keyboard",
+      "priceSnapshot": 10999,
+      "quantity": 1,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-23",
+      "orderId": "ord-23",
+      "productId": "prod-4",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Portable 360 Spatial Speaker",
+      "priceSnapshot": 7499,
+      "quantity": 2,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-24",
+      "orderId": "ord-24",
+      "productId": "prod-5",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Minimalist Carbon Everyday Backpack",
+      "priceSnapshot": 4999,
+      "quantity": 3,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-25",
+      "orderId": "ord-25",
+      "productId": "prod-6",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Classic Heritage Canvas Sneakers",
+      "priceSnapshot": 6499,
+      "quantity": 1,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-26",
+      "orderId": "ord-26",
+      "productId": "prod-7",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Heavyweight Brushed Cotton Hoodie",
+      "priceSnapshot": 3599,
+      "quantity": 2,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-27",
+      "orderId": "ord-27",
+      "productId": "prod-8",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Modern Sculptural Ceramic Lamp",
+      "priceSnapshot": 7999,
+      "quantity": 3,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-28",
+      "orderId": "ord-28",
+      "productId": "prod-9",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Ultrasonic Smart Aroma Diffuser",
+      "priceSnapshot": 5499,
+      "quantity": 1,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-29",
+      "orderId": "ord-29",
+      "productId": "prod-10",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Double-Wall Vacuum Insulated Tumbler",
+      "priceSnapshot": 2199,
+      "quantity": 2,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-30",
+      "orderId": "ord-30",
+      "productId": "prod-11",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Hydrating Botanical Skincare Ritual Kit",
+      "priceSnapshot": 6299,
+      "quantity": 3,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-31",
+      "orderId": "ord-31",
+      "productId": "prod-12",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Pure Hyaluronic Moisture Boost Serum",
+      "priceSnapshot": 2999,
+      "quantity": 1,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-32",
+      "orderId": "ord-32",
+      "productId": "prod-13",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "High-Density Non-Slip Yoga Mat",
+      "priceSnapshot": 4299,
+      "quantity": 2,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-33",
+      "orderId": "ord-33",
+      "productId": "prod-14",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Precision Quick-Select Adjustable Dumbbell",
+      "priceSnapshot": 11999,
+      "quantity": 3,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-34",
+      "orderId": "ord-34",
+      "productId": "prod-15",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Vacuum Insulated Steel Sports Flask",
+      "priceSnapshot": 1999,
+      "quantity": 1,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-35",
+      "orderId": "ord-35",
+      "productId": "prod-16",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "The Creative Momentum Handbook",
+      "priceSnapshot": 1999,
+      "quantity": 2,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-36",
+      "orderId": "ord-36",
+      "productId": "prod-17",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Cognitive Productivity & Focus Journal",
+      "priceSnapshot": 1599,
+      "quantity": 3,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-37",
+      "orderId": "ord-37",
+      "productId": "prod-0",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Noise Cancelling Headphones Pro",
+      "priceSnapshot": 18999,
+      "quantity": 1,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-38",
+      "orderId": "ord-38",
+      "productId": "prod-1",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Pro Wireless Earbuds Spatial",
+      "priceSnapshot": 8999,
+      "quantity": 2,
+      "status": "DELIVERED"
+    },
+    {
+      "id": "oi-87y86rf",
+      "orderId": "ord-39-57no",
+      "productId": "prod-0",
+      "vendorId": "usr-vendor-1",
+      "nameSnapshot": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
+      "priceSnapshot": 89999,
+      "quantity": 1,
+      "status": "CONFIRMED"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay-1",
+      "orderId": "ord-1",
+      "amount": 18999,
+      "method": "BANK_TRANSFER",
+      "status": "PENDING",
+      "createdAt": "2026-08-08T15:53:59.308Z"
+    },
+    {
+      "id": "pay-2",
+      "orderId": "ord-2",
+      "amount": 17998,
+      "method": "COD",
+      "status": "PENDING",
+      "createdAt": "2026-08-10T15:53:59.308Z"
+    },
+    {
+      "id": "pay-3",
+      "orderId": "ord-3",
+      "amount": 41997,
+      "method": "COD",
+      "status": "PENDING",
+      "createdAt": "2026-08-12T15:53:59.308Z"
+    },
+    {
+      "id": "pay-4",
+      "orderId": "ord-4",
+      "amount": 10999,
+      "method": "COD",
+      "status": "PENDING",
+      "createdAt": "2026-08-14T15:53:59.308Z"
+    },
+    {
+      "id": "pay-5",
+      "orderId": "ord-5",
+      "amount": 14998,
+      "method": "BANK_TRANSFER",
+      "status": "PAID",
+      "createdAt": "2026-08-16T15:53:59.308Z"
+    },
+    {
+      "id": "pay-6",
+      "orderId": "ord-6",
+      "amount": 14997,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-08-18T15:53:59.308Z"
+    },
+    {
+      "id": "pay-7",
+      "orderId": "ord-7",
+      "amount": 6499,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-08-20T15:53:59.308Z"
+    },
+    {
+      "id": "pay-8",
+      "orderId": "ord-8",
+      "amount": 7198,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-08-22T15:53:59.308Z"
+    },
+    {
+      "id": "pay-9",
+      "orderId": "ord-9",
+      "amount": 23997,
+      "method": "BANK_TRANSFER",
+      "status": "PAID",
+      "createdAt": "2026-08-24T15:53:59.308Z"
+    },
+    {
+      "id": "pay-10",
+      "orderId": "ord-10",
+      "amount": 5499,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-08-26T15:53:59.308Z"
+    },
+    {
+      "id": "pay-11",
+      "orderId": "ord-11",
+      "amount": 4398,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-08-28T15:53:59.308Z"
+    },
+    {
+      "id": "pay-12",
+      "orderId": "ord-12",
+      "amount": 18897,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-08-30T15:53:59.308Z"
+    },
+    {
+      "id": "pay-13",
+      "orderId": "ord-13",
+      "amount": 2999,
+      "method": "BANK_TRANSFER",
+      "status": "PAID",
+      "createdAt": "2026-09-01T15:53:59.308Z"
+    },
+    {
+      "id": "pay-14",
+      "orderId": "ord-14",
+      "amount": 8598,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-09-03T15:53:59.308Z"
+    },
+    {
+      "id": "pay-15",
+      "orderId": "ord-15",
+      "amount": 35997,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-09-05T15:53:59.308Z"
+    },
+    {
+      "id": "pay-16",
+      "orderId": "ord-16",
+      "amount": 1999,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-09-07T15:53:59.308Z"
+    },
+    {
+      "id": "pay-17",
+      "orderId": "ord-17",
+      "amount": 3998,
+      "method": "BANK_TRANSFER",
+      "status": "PAID",
+      "createdAt": "2026-09-09T15:53:59.308Z"
+    },
+    {
+      "id": "pay-18",
+      "orderId": "ord-18",
+      "amount": 4797,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-09-11T15:53:59.308Z"
+    },
+    {
+      "id": "pay-19",
+      "orderId": "ord-19",
+      "amount": 18999,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-09-13T15:53:59.308Z"
+    },
+    {
+      "id": "pay-20",
+      "orderId": "ord-20",
+      "amount": 17998,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-09-15T15:53:59.308Z"
+    },
+    {
+      "id": "pay-21",
+      "orderId": "ord-21",
+      "amount": 41997,
+      "method": "BANK_TRANSFER",
+      "status": "PAID",
+      "createdAt": "2026-09-17T15:53:59.308Z"
+    },
+    {
+      "id": "pay-22",
+      "orderId": "ord-22",
+      "amount": 10999,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-09-19T15:53:59.308Z"
+    },
+    {
+      "id": "pay-23",
+      "orderId": "ord-23",
+      "amount": 14998,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-09-21T15:53:59.308Z"
+    },
+    {
+      "id": "pay-24",
+      "orderId": "ord-24",
+      "amount": 14997,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-09-23T15:53:59.308Z"
+    },
+    {
+      "id": "pay-25",
+      "orderId": "ord-25",
+      "amount": 6499,
+      "method": "BANK_TRANSFER",
+      "status": "PAID",
+      "createdAt": "2026-09-25T15:53:59.308Z"
+    },
+    {
+      "id": "pay-26",
+      "orderId": "ord-26",
+      "amount": 7198,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-09-27T15:53:59.308Z"
+    },
+    {
+      "id": "pay-27",
+      "orderId": "ord-27",
+      "amount": 23997,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-09-29T15:53:59.308Z"
+    },
+    {
+      "id": "pay-28",
+      "orderId": "ord-28",
+      "amount": 5499,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-10-01T15:53:59.308Z"
+    },
+    {
+      "id": "pay-29",
+      "orderId": "ord-29",
+      "amount": 4398,
+      "method": "BANK_TRANSFER",
+      "status": "PAID",
+      "createdAt": "2026-10-03T15:53:59.308Z"
+    },
+    {
+      "id": "pay-30",
+      "orderId": "ord-30",
+      "amount": 18897,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-10-05T15:53:59.308Z"
+    },
+    {
+      "id": "pay-31",
+      "orderId": "ord-31",
+      "amount": 2999,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-10-07T15:53:59.308Z"
+    },
+    {
+      "id": "pay-32",
+      "orderId": "ord-32",
+      "amount": 8598,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-10-09T15:53:59.308Z"
+    },
+    {
+      "id": "pay-33",
+      "orderId": "ord-33",
+      "amount": 35997,
+      "method": "BANK_TRANSFER",
+      "status": "PAID",
+      "createdAt": "2026-10-11T15:53:59.308Z"
+    },
+    {
+      "id": "pay-34",
+      "orderId": "ord-34",
+      "amount": 1999,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-10-13T15:53:59.308Z"
+    },
+    {
+      "id": "pay-35",
+      "orderId": "ord-35",
+      "amount": 3998,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-10-15T15:53:59.308Z"
+    },
+    {
+      "id": "pay-36",
+      "orderId": "ord-36",
+      "amount": 4797,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-10-17T15:53:59.308Z"
+    },
+    {
+      "id": "pay-37",
+      "orderId": "ord-37",
+      "amount": 18999,
+      "method": "BANK_TRANSFER",
+      "status": "PAID",
+      "createdAt": "2026-10-19T15:53:59.308Z"
+    },
+    {
+      "id": "pay-38",
+      "orderId": "ord-38",
+      "amount": 17998,
+      "method": "COD",
+      "status": "PAID",
+      "createdAt": "2026-10-21T15:53:59.308Z"
+    },
+    {
+      "id": "pay-rf8cu5a",
+      "orderId": "ord-39-57no",
+      "method": "BANK_TRANSFER",
+      "status": "PENDING",
+      "amount": 89999,
+      "createdAt": "2026-11-18T17:07:53.980Z"
+    }
+  ],
+  "deliveries": [
+    {
+      "id": "del-1",
+      "orderId": "ord-2",
+      "agentId": "usr-delivery-1",
+      "status": "IN_TRANSIT",
+      "notes": "Out for afternoon express delivery in Gulberg",
+      "createdAt": "2026-10-23T15:53:59.308Z",
+      "updatedAt": "2026-10-23T15:53:59.308Z"
+    },
+    {
+      "id": "del-2",
+      "orderId": "ord-1",
+      "agentId": "usr-delivery-1",
+      "status": "ASSIGNED",
+      "notes": "Package ready at depot for morning dispatch",
+      "createdAt": "2026-10-23T15:53:59.308Z",
+      "updatedAt": "2026-10-23T15:53:59.308Z"
+    }
+  ],
+  "reports": [],
+  "predictions": [],
+  "auditLogs": []
+}

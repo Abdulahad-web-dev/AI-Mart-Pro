@@ -1,0 +1,97 @@
+{
+  "benchmark_version": "search-benchmark-v2",
+  "total_queries": 103,
+  "languages": [
+    "en",
+    "roman_urdu",
+    "urdu"
+  ],
+  "metrics": {
+    "budget_parsing_accuracy_pct": 99,
+    "mrr_score": 0.956,
+    "ndcg_at_10": 0.96,
+    "zero_result_rate_pct": 0,
+    "intent_detection_precision_pct": 94.2
+  },
+  "sample_evaluations": [
+    {
+      "query": "headphones under 20k",
+      "parsed": {
+        "terms": [
+          "headphones"
+        ],
+        "max_price": 20000,
+        "min_price": null,
+        "intent": [
+          "relevant"
+        ],
+        "language": "en",
+        "corrections": []
+      }
+    },
+    {
+      "query": "wireless earbuds below 10000",
+      "parsed": {
+        "terms": [
+          "wireless",
+          "earbuds"
+        ],
+        "max_price": 10000,
+        "min_price": null,
+        "intent": [
+          "relevant"
+        ],
+        "language": "en",
+        "corrections": []
+      }
+    },
+    {
+      "query": "smart watch under 15k",
+      "parsed": {
+        "terms": [
+          "smart",
+          "watch"
+        ],
+        "max_price": 15000,
+        "min_price": null,
+        "intent": [
+          "relevant"
+        ],
+        "language": "en",
+        "corrections": []
+      }
+    },
+    {
+      "query": "mechanical keyboard under 12k",
+      "parsed": {
+        "terms": [
+          "mechanical",
+          "keyboard"
+        ],
+        "max_price": 12000,
+        "min_price": null,
+        "intent": [
+          "relevant"
+        ],
+        "language": "en",
+        "corrections": []
+      }
+    },
+    {
+      "query": "bluetooth speaker under 8000",
+      "parsed": {
+        "terms": [
+          "bluetooth",
+          "speaker"
+        ],
+        "max_price": 8000,
+        "min_price": null,
+        "intent": [
+          "relevant"
+        ],
+        "language": "en",
+        "corrections": []
+      }
+    }
+  ]
+}

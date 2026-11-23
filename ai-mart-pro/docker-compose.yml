@@ -1,0 +1,60 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: aimart
+      POSTGRES_PASSWORD: aimart
+      POSTGRES_DB: aimart
+    ports:
+      - '5432:5432'
+    volumes:
+      - aimart_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U aimart"]
+      interval: 4s
+      retries: 15
+  ai:
+    build:
+      context: ./services/ai
+    environment:
+      AI_SERVICE_KEY: dev-only-ai-shared-secret-2026
+    ports:
+      - '8000:8000'
+  api:
+    build:
+      context: ./apps/api
+    depends_on:
+      postgres:
+        condition: service_healthy
+      ai:
+        condition: service_started
+    environment:
+      PORT: '4000'
+      DATABASE_URL: postgresql://aimart:aimart@postgres:5432/aimart?schema=public
+      JWT_SECRET: change-this-long-random-secret-before-public-deployment-2026
+      WEB_ORIGIN: http://localhost:3000
+      PUBLIC_API_URL: http://localhost:4000
+      AI_SERVICE_URL: http://ai:8000
+      AI_SERVICE_KEY: dev-only-ai-shared-secret-2026
+      NODE_ENV: development
+      SEED_IMAGE_ORIGIN: http://localhost:3000
+    ports:
+      - '4000:4000'
+    volumes:
+      - aimart_uploads:/app/uploads
+  web:
+    build:
+      context: ./apps/web
+      args:
+        API_REWRITE_TARGET: http://api:4000
+    depends_on:
+      - api
+    environment:
+      API_REWRITE_TARGET: http://api:4000
+      NEXT_PUBLIC_API_URL: /backend
+      NEXT_TELEMETRY_DISABLED: '1'
+    ports:
+      - '3000:3000'
+volumes:
+  aimart_pgdata:
+  aimart_uploads:

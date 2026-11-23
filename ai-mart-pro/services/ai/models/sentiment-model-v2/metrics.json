@@ -1,0 +1,48 @@
+{
+  "model_version": "sentiment-multilingual-v2",
+  "architecture": "Trilingual Char-WB N-Gram TF-IDF + Logistic Regression",
+  "supported_languages": [
+    "English",
+    "Roman Urdu (Urdu in Latin script)",
+    "Urdu (Arabic/Nastaliq script)"
+  ],
+  "supported_aspects": [
+    "delivery",
+    "packaging",
+    "quality",
+    "price",
+    "battery",
+    "support",
+    "sizing"
+  ],
+  "total_samples": 80,
+  "train_samples": 60,
+  "test_samples": 20,
+  "evaluation": {
+    "overall_accuracy": 0.5,
+    "overall_weighted_f1": 0.429,
+    "positive_f1": 0.571,
+    "negative_f1": 0.571,
+    "neutral_f1": 0.0,
+    "per_language": {
+      "en": {
+        "samples": 4,
+        "f1_score": 0.733,
+        "precision": 0.833,
+        "recall": 0.75
+      },
+      "roman_urdu": {
+        "samples": 10,
+        "f1_score": 0.409,
+        "precision": 0.395,
+        "recall": 0.5
+      },
+      "urdu": {
+        "samples": 6,
+        "f1_score": 0.25,
+        "precision": 0.222,
+        "recall": 0.333
+      }
+    }
+  }
+}

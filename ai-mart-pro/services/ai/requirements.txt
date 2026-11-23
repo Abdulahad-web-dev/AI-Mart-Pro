@@ -1,0 +1,12 @@
+fastapi>=0.110,<1
+uvicorn[standard]>=0.29,<1
+pydantic>=2.6,<3
+scikit-learn>=1.3,<2
+numpy>=1.26,<3
+pandas>=2.0,<3
+joblib>=1.3,<2
+xgboost>=2,<4
+
+# Test dependencies for reproducible AI service tests
+pytest>=7.4,<10
+httpx>=0.25,<1

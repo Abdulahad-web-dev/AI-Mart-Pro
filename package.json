@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@maptiler/sdk": "^5.0.0"
+  }
+}

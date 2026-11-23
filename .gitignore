@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Next.js build output
+.next/
+**/.next/
+out/
+
+# Python virtual environments & cache
+.venv/
+**/.venv/
+venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Environment secrets (keep .env.example tracked)
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.local
+**/.env.*.local
+!*.env.example
+!**/.env.example
+
+# Logs & temporary files
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+uploads/
+**/uploads/

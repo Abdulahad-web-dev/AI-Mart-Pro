@@ -1,0 +1,43 @@
+<svg viewBox="0 0 200 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aiMartBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB923C" />
+      <stop offset="45%" stop-color="#F97316" />
+      <stop offset="100%" stop-color="#EA580C" />
+    </linearGradient>
+    <linearGradient id="aiMartFacet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C2410C" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#7C2D12" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="aiMartGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.05" />
+    </linearGradient>
+    <radialGradient id="aiMartGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FEF08A" stop-opacity="1" />
+      <stop offset="100%" stop-color="#F97316" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Squircle App-Icon Container -->
+  <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#aiMartBg)" />
+  <rect x="2.5" y="2.5" width="43" height="43" rx="11.5" stroke="url(#aiMartGlass)" stroke-width="1.5" />
+
+  <!-- Monogram A + Cart + Neural Core -->
+  <path d="M14 34L24 13L34 34H28.5L24 23.5L19.5 34H14Z" fill="#FFFFFF" fill-opacity="0.95" />
+  <path d="M24 13L34 34H28.5L24 23.5V13Z" fill="url(#aiMartFacet)" fill-opacity="0.35" />
+  <path d="M16.5 26C19 28.5 29 28.5 31.5 26L33.5 29.5C29.5 33 18.5 33 14.5 29.5L16.5 26Z" fill="#FFFFFF" />
+
+  <!-- Neural Core & Sparkle -->
+  <circle cx="24" cy="20" r="3" fill="url(#aiMartGlow)" />
+  <circle cx="24" cy="20" r="2" fill="#F97316" />
+  <path d="M36 7L37.2 10.5L40.7 11.7L37.2 12.9L36 16.5L34.8 12.9L31.3 11.7L34.8 10.5L36 7Z" fill="#FEF08A" />
+
+  <!-- Typography -->
+  <text x="56" y="32" font-family="Inter, -apple-system, sans-serif" font-weight="900" font-size="22" letter-spacing="-0.04em" fill="#F97316">AI</text>
+  <text x="83" y="32" font-family="Inter, -apple-system, sans-serif" font-weight="800" font-size="22" letter-spacing="-0.02em" fill="#171717">MART</text>
+
+  <!-- PRO Pill Badge -->
+  <rect x="150" y="16" width="44" height="20" rx="10" fill="rgba(249, 115, 22, 0.12)" stroke="rgba(249, 115, 22, 0.35)" stroke-width="1" />
+  <text x="172" y="30" font-family="monospace, monospace" font-weight="700" font-size="11" letter-spacing="0.08em" fill="#F97316" text-anchor="middle">PRO</text>
+</svg>

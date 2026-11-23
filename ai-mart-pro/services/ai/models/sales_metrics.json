@@ -1,0 +1,314 @@
+{
+  "model_version": "sales-model-v2",
+  "architecture": "Quantile HistGradientBoosting (P10/P50/P90) + Pakistan Commercial Calendar",
+  "dataset": "Time-indexed multi-product dataset with Pakistani seasonal events",
+  "train_rows": 2280,
+  "test_rows": 600,
+  "split_strategy": "Chronological rolling-origin split (days <190 train, >=190 test; zero future leakage)",
+  "evaluation": {
+    "model_mae": 3.405,
+    "baseline_mae": 6.317,
+    "mae_improvement_pct": 46.09,
+    "model_rmse": 4.556,
+    "baseline_rmse": 8.648,
+    "model_wape": 0.156,
+    "baseline_wape": 0.29,
+    "wape_improvement_pct": 46.09,
+    "coverage_p10_p90_pct": 70.2
+  },
+  "backtest_timeline": [
+    {
+      "day": 190,
+      "date_offset": "Day +1",
+      "actual": 28,
+      "predicted_p50": 29.5,
+      "p10": 22.6,
+      "p90": 41.6,
+      "seasonal_naive": 39.0
+    },
+    {
+      "day": 191,
+      "date_offset": "Day +2",
+      "actual": 42,
+      "predicted_p50": 35.8,
+      "p10": 25.9,
+      "p90": 42.5,
+      "seasonal_naive": 50.0
+    },
+    {
+      "day": 192,
+      "date_offset": "Day +3",
+      "actual": 39,
+      "predicted_p50": 36.7,
+      "p10": 31.5,
+      "p90": 42.0,
+      "seasonal_naive": 54.0
+    },
+    {
+      "day": 193,
+      "date_offset": "Day +4",
+      "actual": 31,
+      "predicted_p50": 38.4,
+      "p10": 28.9,
+      "p90": 39.8,
+      "seasonal_naive": 68.0
+    },
+    {
+      "day": 194,
+      "date_offset": "Day +5",
+      "actual": 26,
+      "predicted_p50": 26.2,
+      "p10": 18.4,
+      "p90": 29.3,
+      "seasonal_naive": 31.0
+    },
+    {
+      "day": 195,
+      "date_offset": "Day +6",
+      "actual": 25,
+      "predicted_p50": 23.4,
+      "p10": 17.7,
+      "p90": 27.7,
+      "seasonal_naive": 25.0
+    },
+    {
+      "day": 196,
+      "date_offset": "Day +7",
+      "actual": 19,
+      "predicted_p50": 21.9,
+      "p10": 17.2,
+      "p90": 27.5,
+      "seasonal_naive": 21.0
+    },
+    {
+      "day": 197,
+      "date_offset": "Day +8",
+      "actual": 25,
+      "predicted_p50": 26.3,
+      "p10": 18.1,
+      "p90": 32.2,
+      "seasonal_naive": 28.0
+    },
+    {
+      "day": 198,
+      "date_offset": "Day +9",
+      "actual": 31,
+      "predicted_p50": 27.6,
+      "p10": 20.2,
+      "p90": 34.8,
+      "seasonal_naive": 42.0
+    },
+    {
+      "day": 199,
+      "date_offset": "Day +10",
+      "actual": 23,
+      "predicted_p50": 27.0,
+      "p10": 17.1,
+      "p90": 33.9,
+      "seasonal_naive": 39.0
+    },
+    {
+      "day": 200,
+      "date_offset": "Day +11",
+      "actual": 29,
+      "predicted_p50": 26.0,
+      "p10": 14.8,
+      "p90": 31.3,
+      "seasonal_naive": 31.0
+    },
+    {
+      "day": 201,
+      "date_offset": "Day +12",
+      "actual": 24,
+      "predicted_p50": 21.5,
+      "p10": 14.9,
+      "p90": 27.4,
+      "seasonal_naive": 26.0
+    },
+    {
+      "day": 202,
+      "date_offset": "Day +13",
+      "actual": 26,
+      "predicted_p50": 22.3,
+      "p10": 14.7,
+      "p90": 27.6,
+      "seasonal_naive": 25.0
+    },
+    {
+      "day": 203,
+      "date_offset": "Day +14",
+      "actual": 25,
+      "predicted_p50": 20.9,
+      "p10": 15.6,
+      "p90": 25.7,
+      "seasonal_naive": 19.0
+    },
+    {
+      "day": 204,
+      "date_offset": "Day +15",
+      "actual": 17,
+      "predicted_p50": 23.2,
+      "p10": 16.7,
+      "p90": 29.7,
+      "seasonal_naive": 25.0
+    },
+    {
+      "day": 205,
+      "date_offset": "Day +16",
+      "actual": 28,
+      "predicted_p50": 33.3,
+      "p10": 22.0,
+      "p90": 38.3,
+      "seasonal_naive": 31.0
+    },
+    {
+      "day": 206,
+      "date_offset": "Day +17",
+      "actual": 33,
+      "predicted_p50": 29.7,
+      "p10": 22.2,
+      "p90": 34.4,
+      "seasonal_naive": 23.0
+    },
+    {
+      "day": 207,
+      "date_offset": "Day +18",
+      "actual": 51,
+      "predicted_p50": 46.1,
+      "p10": 34.1,
+      "p90": 51.1,
+      "seasonal_naive": 29.0
+    },
+    {
+      "day": 208,
+      "date_offset": "Day +19",
+      "actual": 32,
+      "predicted_p50": 29.3,
+      "p10": 26.5,
+      "p90": 34.3,
+      "seasonal_naive": 24.0
+    },
+    {
+      "day": 209,
+      "date_offset": "Day +20",
+      "actual": 51,
+      "predicted_p50": 29.5,
+      "p10": 21.4,
+      "p90": 31.3,
+      "seasonal_naive": 26.0
+    },
+    {
+      "day": 210,
+      "date_offset": "Day +21",
+      "actual": 34,
+      "predicted_p50": 29.7,
+      "p10": 26.8,
+      "p90": 34.7,
+      "seasonal_naive": 25.0
+    },
+    {
+      "day": 211,
+      "date_offset": "Day +22",
+      "actual": 36,
+      "predicted_p50": 27.0,
+      "p10": 22.6,
+      "p90": 30.8,
+      "seasonal_naive": 17.0
+    },
+    {
+      "day": 212,
+      "date_offset": "Day +23",
+      "actual": 45,
+      "predicted_p50": 42.9,
+      "p10": 29.3,
+      "p90": 55.7,
+      "seasonal_naive": 28.0
+    },
+    {
+      "day": 213,
+      "date_offset": "Day +24",
+      "actual": 65,
+      "predicted_p50": 55.8,
+      "p10": 40.1,
+      "p90": 67.8,
+      "seasonal_naive": 33.0
+    },
+    {
+      "day": 214,
+      "date_offset": "Day +25",
+      "actual": 46,
+      "predicted_p50": 56.4,
+      "p10": 38.4,
+      "p90": 58.7,
+      "seasonal_naive": 51.0
+    },
+    {
+      "day": 215,
+      "date_offset": "Day +26",
+      "actual": 43,
+      "predicted_p50": 34.4,
+      "p10": 27.9,
+      "p90": 43.5,
+      "seasonal_naive": 32.0
+    },
+    {
+      "day": 216,
+      "date_offset": "Day +27",
+      "actual": 37,
+      "predicted_p50": 45.8,
+      "p10": 29.7,
+      "p90": 48.3,
+      "seasonal_naive": 51.0
+    },
+    {
+      "day": 217,
+      "date_offset": "Day +28",
+      "actual": 29,
+      "predicted_p50": 32.7,
+      "p10": 23.0,
+      "p90": 41.5,
+      "seasonal_naive": 34.0
+    },
+    {
+      "day": 218,
+      "date_offset": "Day +29",
+      "actual": 28,
+      "predicted_p50": 31.1,
+      "p10": 21.3,
+      "p90": 42.2,
+      "seasonal_naive": 36.0
+    },
+    {
+      "day": 219,
+      "date_offset": "Day +30",
+      "actual": 37,
+      "predicted_p50": 37.3,
+      "p10": 25.5,
+      "p90": 47.0,
+      "seasonal_naive": 45.0
+    }
+  ],
+  "feature_columns": [
+    "day_of_week",
+    "day_of_month",
+    "month",
+    "is_weekend",
+    "is_salary_week",
+    "is_event",
+    "event_multiplier",
+    "is_promo_surge",
+    "lag1",
+    "lag7",
+    "lag14",
+    "lag28",
+    "roll_mean7",
+    "roll_mean28",
+    "roll_std7",
+    "trend_slope",
+    "price",
+    "discount_pct",
+    "is_promo",
+    "stockout_flag",
+    "days_since_launch"
+  ]
+}
